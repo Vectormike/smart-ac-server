@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_DATABASE=postgres
+      - MYSQL_USER=postgres
+      - MYSQL_PASSWORD
+    ports:
+      - '8889:8889'
+    volumes: 
+      - my-db:/var/lib/mysql
+  api:
+    container_name: lendsqr
+    build:
+      context: ./
+    image: lendsqr
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+    environment:
+      NODE_ENV: production
+      DB_HOST: db
+      DB_PORT: 8889
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: lendsqr
+    links:
+      - db
+    volumes:
+      - './:/src'
+volumes:
+  db:
+    driver: local

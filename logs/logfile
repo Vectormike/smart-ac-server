@@ -1,0 +1,87 @@
+info: Request🏷️: Mar-11-2022 02:16:40: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 17:58:41: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:01:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:02:20: ::1 - - [11/Mar/2022:19:02:20 +0000] "POST /register-device HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:02:38: ::1 - - [11/Mar/2022:19:02:38 +0000] "POST /api/register-device HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:02:49: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:02:50: validation error
+info: Request🏷️: Mar-11-2022 20:02:50: Serial number is required
+info: Request🏷️: Mar-11-2022 20:02:50: request>>{}
+info: Request🏷️: Mar-11-2022 20:02:50: ::1 - - [11/Mar/2022:19:02:50 +0000] "POST /api/register-device HTTP/1.1" 400 167 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:10:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:13:09: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:13:29: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:17:37: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:17:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:18:41: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:19:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:23:24: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:24:18: validation error
+info: Request🏷️: Mar-11-2022 20:24:18: Registration date is required
+info: Request🏷️: Mar-11-2022 20:24:18: request>>{"serialNumber":"123456789","firmwareVersion":"1.0"}
+info: Request🏷️: Mar-11-2022 20:24:18: ::1 - - [11/Mar/2022:19:24:18 +0000] "POST /api/register-device HTTP/1.1" 400 175 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:24:34: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:24:43: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:24:43: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:24:43: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:24:43: request>>{"serialNumber":"123456789","firmwareVersion":"1.0"}
+info: Request🏷️: Mar-11-2022 20:24:43: ::1 - - [11/Mar/2022:19:24:43 +0000] "POST /api/register-device HTTP/1.1" 500 465 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:25:47: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:26:03: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:26:03: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:26:03: request>>{"serialNumber":"123456789","firmwareVersion":"1.0"}
+info: Request🏷️: Mar-11-2022 20:26:03: ::1 - - [11/Mar/2022:19:26:03 +0000] "POST /api/register-device HTTP/1.1" 500 465 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:26:58: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:27:14: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:27:14: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'recentRegistrationDate' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:27:14: request>>{"serialNumber":"123456789","firmwareVersion":"1.0"}
+info: Request🏷️: Mar-11-2022 20:27:14: ::1 - - [11/Mar/2022:19:27:14 +0000] "POST /api/register-device HTTP/1.1" 500 465 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:27:48: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:28:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:28:08: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:28:15: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'theorem.tokens' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:28:15: {"name":"DBError","nativeError":{"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'theorem.tokens' doesn't exist"},"client":"mysql"}
+info: Request🏷️: Mar-11-2022 20:28:15: request>>{"serialNumber":"123456789","firmwareVersion":"1.0"}
+info: Request🏷️: Mar-11-2022 20:28:15: ::1 - - [11/Mar/2022:19:28:15 +0000] "POST /api/register-device HTTP/1.1" 500 494 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:28:53: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:30:11: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:30:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:30:26: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:30:34: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:31:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:32:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:32:44: ::1 - - [11/Mar/2022:19:32:44 +0000] "POST /api/register-device HTTP/1.1" 201 308 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:32:53: ::1 - - [11/Mar/2022:19:32:53 +0000] "POST /api/register-device HTTP/1.1" 201 295 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:32:56: ::1 - - [11/Mar/2022:19:32:56 +0000] "POST /api/register-device HTTP/1.1" 201 295 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:37:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:37:18: ::1 - - [11/Mar/2022:19:37:18 +0000] "POST /api/register-device HTTP/1.1" 201 295 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:38:23: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:38:24: ::1 - - [11/Mar/2022:19:38:24 +0000] "POST /api/register-device HTTP/1.1" 201 295 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:41:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:44:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:46:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:46:38: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:56:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:57:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:57:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:57:20: ::1 - - [11/Mar/2022:19:57:20 +0000] "POST /api/register-device HTTP/1.1" 201 296 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-11-2022 20:57:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:57:40: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:58:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:59:10: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 20:59:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 21:13:16: Server server started at http://localhost:8000
