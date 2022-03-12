@@ -196,3 +196,479 @@ info: Request🏷️: Mar-12-2022 07:06:27: request>>{"serialNumber":"123456789"
 info: Request🏷️: Mar-12-2022 07:06:27: ::1 - - [12/Mar/2022:06:06:27 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
 
 info: Request🏷️: Mar-12-2022 07:07:08: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 08:20:27: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 08:20:47: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 08:21:02: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 08:21:39: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 08:21:58: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:00:27: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:00:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:07:57: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:13:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:13:40: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:13:58: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:14:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:23:06: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:24:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:29:51: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:30:02: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:30:44: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 09:30:47: Server server started at http://localhost:8000
+error: Request🏷️: Mar-12-2022 10:34:47: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at Function.listen (/Users/macbookpro/Desktop/Projects/theorem_ass/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/theorem_ass/dist/src/server.js:25:15)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+error: Request🏷️: Mar-12-2022 10:36:19: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at Function.listen (/Users/macbookpro/Desktop/Projects/theorem_ass/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/macbookpro/Desktop/Projects/theorem_ass/dist/src/server.js:25:15)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+info: Request🏷️: Mar-12-2022 10:36:43: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:37:19: validation error
+info: Request🏷️: Mar-12-2022 10:37:19: Temperature is required
+info: Request🏷️: Mar-12-2022 10:37:19: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 10:37:19: ::1 - - [12/Mar/2022:09:37:19 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:38:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:38:22: [object Object]
+info: Request🏷️: Mar-12-2022 10:38:22: ::1 - - [12/Mar/2022:09:38:22 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:38:22: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:38:40: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:38:42: [object Object]
+info: Request🏷️: Mar-12-2022 10:38:42: ::1 - - [12/Mar/2022:09:38:42 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:38:42: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:39:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:39:10: [object Object]
+info: Request🏷️: Mar-12-2022 10:39:10: ::1 - - [12/Mar/2022:09:39:10 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:39:10: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:41:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:41:28: [object Object]
+info: Request🏷️: Mar-12-2022 10:41:28: ::1 - - [12/Mar/2022:09:41:28 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:41:28: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:41:38: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:41:38: [object Object]
+info: Request🏷️: Mar-12-2022 10:41:38: ::1 - - [12/Mar/2022:09:41:38 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:41:39: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:43:39: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:43:43: [object Object]
+info: Request🏷️: Mar-12-2022 10:43:43: ::1 - - [12/Mar/2022:09:43:43 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:43:44: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:44:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:44:40: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:44:41: [object Object]
+info: Request🏷️: Mar-12-2022 10:44:41: ::1 - - [12/Mar/2022:09:44:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:44:41: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:46:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:46:34: [object Object]
+info: Request🏷️: Mar-12-2022 10:46:34: ::1 - - [12/Mar/2022:09:46:34 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:46:34: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:48:35: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:48:41: [object Object]
+info: Request🏷️: Mar-12-2022 10:48:41: ::1 - - [12/Mar/2022:09:48:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:48:41: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:48:47: [object Object]
+info: Request🏷️: Mar-12-2022 10:48:47: ::1 - - [12/Mar/2022:09:48:47 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:48:47: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:49:09: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:49:11: [object Object]
+info: Request🏷️: Mar-12-2022 10:49:11: ::1 - - [12/Mar/2022:09:49:11 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:49:11: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:50:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:51:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:51:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:51:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:51:37: [object Object]
+info: Request🏷️: Mar-12-2022 10:51:37: ::1 - - [12/Mar/2022:09:51:37 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:51:37: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:52:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:52:05: [object Object]
+info: Request🏷️: Mar-12-2022 10:52:06: ::1 - - [12/Mar/2022:09:52:06 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:52:06: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:56:25: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:56:30: [object Object]
+info: Request🏷️: Mar-12-2022 10:56:30: ::1 - - [12/Mar/2022:09:56:30 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:56:30: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:56:40: [object Object]
+info: Request🏷️: Mar-12-2022 10:56:40: ::1 - - [12/Mar/2022:09:56:40 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:56:40: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:58:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:58:02: [object Object]
+info: Request🏷️: Mar-12-2022 10:58:02: ::1 - - [12/Mar/2022:09:58:02 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:58:03: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 10:58:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 10:58:37: [object Object]
+info: Request🏷️: Mar-12-2022 10:58:37: ::1 - - [12/Mar/2022:09:58:37 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 10:58:37: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:00:06: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:00:07: [object Object]
+info: Request🏷️: Mar-12-2022 11:00:07: ::1 - - [12/Mar/2022:10:00:07 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:00:08: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:00:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:00:41: [object Object]
+info: Request🏷️: Mar-12-2022 11:00:41: ::1 - - [12/Mar/2022:10:00:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:00:42: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:00:56: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:00:56: [object Object]
+info: Request🏷️: Mar-12-2022 11:00:56: ::1 - - [12/Mar/2022:10:00:56 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:00:56: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:01:40: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:01:43: [object Object]
+info: Request🏷️: Mar-12-2022 11:01:43: ::1 - - [12/Mar/2022:10:01:43 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:01:43: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:03:52: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:03:54: [object Object]
+info: Request🏷️: Mar-12-2022 11:03:54: ::1 - - [12/Mar/2022:10:03:54 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:03:54: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:05:21: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:05:21: [object Object]
+info: Request🏷️: Mar-12-2022 11:05:21: ::1 - - [12/Mar/2022:10:05:21 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:05:22: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:06:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:06:47: [object Object]
+info: Request🏷️: Mar-12-2022 11:06:47: ::1 - - [12/Mar/2022:10:06:47 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:06:47: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:07:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:07:31: [object Object]
+info: Request🏷️: Mar-12-2022 11:07:31: ::1 - - [12/Mar/2022:10:07:31 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:07:31: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:08:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:08:25: [object Object]
+info: Request🏷️: Mar-12-2022 11:08:25: ::1 - - [12/Mar/2022:10:08:25 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:08:25: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:09:07: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:09:09: [object Object]
+info: Request🏷️: Mar-12-2022 11:09:09: ::1 - - [12/Mar/2022:10:09:09 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:09:09: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:09:53: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:09:55: [object Object]
+info: Request🏷️: Mar-12-2022 11:09:55: ::1 - - [12/Mar/2022:10:09:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:09:55: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:10:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:11:00: [object Object]
+info: Request🏷️: Mar-12-2022 11:11:00: ::1 - - [12/Mar/2022:10:11:00 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:11:00: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:11:00: [object Object]
+info: Request🏷️: Mar-12-2022 11:11:00: ::1 - - [12/Mar/2022:10:11:00 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:11:00: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:11:27: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:11:44: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:11:46: [object Object]
+info: Request🏷️: Mar-12-2022 11:11:46: ::1 - - [12/Mar/2022:10:11:46 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:11:47: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:11:57: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:11:59: [object Object]
+info: Request🏷️: Mar-12-2022 11:11:59: ::1 - - [12/Mar/2022:10:11:59 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:11:59: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:12:29: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:12:29: [object Object]
+info: Request🏷️: Mar-12-2022 11:12:30: ::1 - - [12/Mar/2022:10:12:30 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:12:30: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:13:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:13:03: [object Object]
+info: Request🏷️: Mar-12-2022 11:13:03: ::1 - - [12/Mar/2022:10:13:03 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:13:03: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:13:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:13:26: [object Object]
+info: Request🏷️: Mar-12-2022 11:13:26: ::1 - - [12/Mar/2022:10:13:26 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:13:26: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:14:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:14:36: [object Object]
+info: Request🏷️: Mar-12-2022 11:14:36: ::1 - - [12/Mar/2022:10:14:36 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:14:36: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:15:04: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:15:05: [object Object]
+info: Request🏷️: Mar-12-2022 11:15:05: ::1 - - [12/Mar/2022:10:15:05 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:15:06: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:15:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:15:42: [object Object]
+info: Request🏷️: Mar-12-2022 11:15:42: ::1 - - [12/Mar/2022:10:15:42 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:15:42: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:22:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:22:24: [object Object]
+info: Request🏷️: Mar-12-2022 11:22:24: ::1 - - [12/Mar/2022:10:22:24 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:22:24: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:23:47: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:23:48: [object Object]
+info: Request🏷️: Mar-12-2022 11:23:48: ::1 - - [12/Mar/2022:10:23:48 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:23:48: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:24:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:24:31: [object Object]
+info: Request🏷️: Mar-12-2022 11:24:31: ::1 - - [12/Mar/2022:10:24:31 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:24:31: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:24:49: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:24:50: [object Object]
+info: Request🏷️: Mar-12-2022 11:24:50: ::1 - - [12/Mar/2022:10:24:50 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:24:50: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:26:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:26:06: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:26:13: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:26:16: [object Object]
+info: Request🏷️: Mar-12-2022 11:26:16: ::1 - - [12/Mar/2022:10:26:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:26:16: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:31:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:31:32: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:31:35: [object Object]
+info: Request🏷️: Mar-12-2022 11:31:35: ::1 - - [12/Mar/2022:10:31:35 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:31:35: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:31:46: [object Object]
+info: Request🏷️: Mar-12-2022 11:31:46: ::1 - - [12/Mar/2022:10:31:46 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:31:46: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:32:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:32:12: [object Object]
+info: Request🏷️: Mar-12-2022 11:32:12: ::1 - - [12/Mar/2022:10:32:12 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:32:12: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:32:51: [object Object]
+info: Request🏷️: Mar-12-2022 11:32:51: ::1 - - [12/Mar/2022:10:32:51 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:32:51: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:33:08: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:33:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:33:13: [object Object]
+info: Request🏷️: Mar-12-2022 11:33:13: ::1 - - [12/Mar/2022:10:33:13 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:33:13: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:33:38: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:33:39: [object Object]
+info: Request🏷️: Mar-12-2022 11:33:39: ::1 - - [12/Mar/2022:10:33:39 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:33:39: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:33:50: [object Object]
+info: Request🏷️: Mar-12-2022 11:33:50: ::1 - - [12/Mar/2022:10:33:50 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:33:50: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:34:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:34:22: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:34:24: [object Object]
+info: Request🏷️: Mar-12-2022 11:34:24: ::1 - - [12/Mar/2022:10:34:24 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:34:25: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:34:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:34:37: [object Object]
+info: Request🏷️: Mar-12-2022 11:34:37: ::1 - - [12/Mar/2022:10:34:37 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:34:37: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:34:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:35:00: [object Object]
+info: Request🏷️: Mar-12-2022 11:35:00: ::1 - - [12/Mar/2022:10:35:00 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:35:00: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:35:35: [object Object]
+info: Request🏷️: Mar-12-2022 11:35:35: ::1 - - [12/Mar/2022:10:35:35 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:35:35: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:35:45: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:35:47: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:35:49: [object Object]
+info: Request🏷️: Mar-12-2022 11:35:49: ::1 - - [12/Mar/2022:10:35:49 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:35:49: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:36:06: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:36:08: [object Object]
+info: Request🏷️: Mar-12-2022 11:36:08: ::1 - - [12/Mar/2022:10:36:08 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:36:08: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:36:18: [object Object]
+info: Request🏷️: Mar-12-2022 11:36:18: ::1 - - [12/Mar/2022:10:36:18 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:36:18: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:36:35: [object Object]
+info: Request🏷️: Mar-12-2022 11:36:35: ::1 - - [12/Mar/2022:10:36:35 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:36:35: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:36:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:36:44: [object Object]
+info: Request🏷️: Mar-12-2022 11:36:44: ::1 - - [12/Mar/2022:10:36:44 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:36:44: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:37:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:37:02: [object Object]
+info: Request🏷️: Mar-12-2022 11:37:02: ::1 - - [12/Mar/2022:10:37:02 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:37:02: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:37:25: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:37:26: [object Object]
+info: Request🏷️: Mar-12-2022 11:37:26: ::1 - - [12/Mar/2022:10:37:26 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:37:42: [object Object]
+info: Request🏷️: Mar-12-2022 11:37:42: ::1 - - [12/Mar/2022:10:37:42 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:38:09: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:38:11: [object Object]
+info: Request🏷️: Mar-12-2022 11:38:11: ::1 - - [12/Mar/2022:10:38:11 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:39:11: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:39:12: [object Object]
+info: Request🏷️: Mar-12-2022 11:39:12: ::1 - - [12/Mar/2022:10:39:12 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:39:12: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:40:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:41:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:42:24: [object Object]
+info: Request🏷️: Mar-12-2022 11:42:24: ::1 - - [12/Mar/2022:10:42:24 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:42:24: Device does not exist, should reregister
+info: Request🏷️: Mar-12-2022 11:42:24: {"message":"Device does not exist, should reregister","status":"Bad request","statusCode":400}
+info: Request🏷️: Mar-12-2022 11:42:35: ::1 - - [12/Mar/2022:10:42:35 +0000] "POST /api/register-device HTTP/1.1" 201 318 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:42:41: [object Object]
+info: Request🏷️: Mar-12-2022 11:42:41: ::1 - - [12/Mar/2022:10:42:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:42:41: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:43:23: [object Object]
+info: Request🏷️: Mar-12-2022 11:43:23: ::1 - - [12/Mar/2022:10:43:23 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:43:23: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:43:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:43:31: [object Object]
+info: Request🏷️: Mar-12-2022 11:43:31: ::1 - - [12/Mar/2022:10:43:31 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:43:32: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:43:45: [object Object]
+info: Request🏷️: Mar-12-2022 11:43:45: ::1 - - [12/Mar/2022:10:43:45 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:43:45: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:43:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:43:53: [object Object]
+info: Request🏷️: Mar-12-2022 11:43:54: ::1 - - [12/Mar/2022:10:43:54 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:43:54: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:44:07: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:44:09: [object Object]
+info: Request🏷️: Mar-12-2022 11:44:09: ::1 - - [12/Mar/2022:10:44:09 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:44:09: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'carbonMonoxide' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:44:43: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:45:04: [object Object]
+info: Request🏷️: Mar-12-2022 11:45:04: ::1 - - [12/Mar/2022:10:45:04 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:45:04: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'humidity' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:45:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:45:46: [object Object]
+info: Request🏷️: Mar-12-2022 11:45:46: ::1 - - [12/Mar/2022:10:45:46 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:45:46: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'temperature' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:45:53: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:45:54: [object Object]
+info: Request🏷️: Mar-12-2022 11:45:54: ::1 - - [12/Mar/2022:10:45:54 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:45:54: {"name":"DataError","nativeError":{"code":"ER_WARN_DATA_OUT_OF_RANGE","errno":1264,"sqlState":"22003","sqlMessage":"Out of range value for column 'temperature' at row 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 11:46:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:46:20: [object Object]
+info: Request🏷️: Mar-12-2022 11:46:20: ::1 - - [12/Mar/2022:10:46:20 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:48:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:48:17: [object Object]
+info: Request🏷️: Mar-12-2022 11:48:17: ::1 - - [12/Mar/2022:10:48:17 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:48:52: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:49:06: [object Object]
+info: Request🏷️: Mar-12-2022 11:49:06: ::1 - - [12/Mar/2022:10:49:06 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:51:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:51:31: [object Object]
+info: Request🏷️: Mar-12-2022 11:51:31: ::1 - - [12/Mar/2022:10:51:31 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:52:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:52:34: [object Object]
+info: Request🏷️: Mar-12-2022 11:52:34: ::1 - - [12/Mar/2022:10:52:34 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:53:03: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:53:05: [object Object]
+info: Request🏷️: Mar-12-2022 11:53:05: ::1 - - [12/Mar/2022:10:53:05 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:53:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:53:57: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:53:59: [object Object]
+info: Request🏷️: Mar-12-2022 11:53:59: ::1 - - [12/Mar/2022:10:53:59 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:54:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:54:30: [object Object]
+info: Request🏷️: Mar-12-2022 11:54:30: ::1 - - [12/Mar/2022:10:54:30 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:55:49: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:55:51: [object Object]
+info: Request🏷️: Mar-12-2022 11:55:51: ::1 - - [12/Mar/2022:10:55:51 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:56:11: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:56:14: [object Object]
+info: Request🏷️: Mar-12-2022 11:56:14: ::1 - - [12/Mar/2022:10:56:14 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:56:58: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:57:03: [object Object]
+info: Request🏷️: Mar-12-2022 11:57:03: ::1 - - [12/Mar/2022:10:57:03 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:57:10: [object Object]
+info: Request🏷️: Mar-12-2022 11:57:10: ::1 - - [12/Mar/2022:10:57:10 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:57:18: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:57:25: [object Object]
+info: Request🏷️: Mar-12-2022 11:57:25: ::1 - - [12/Mar/2022:10:57:25 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 11:57:38: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 11:57:40: [object Object]
+info: Request🏷️: Mar-12-2022 11:57:40: ::1 - - [12/Mar/2022:10:57:40 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 12:13:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 12:13:39: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 12:14:07: Server server started at http://localhost:5000

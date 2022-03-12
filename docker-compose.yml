@@ -3,14 +3,14 @@ services:
   db:
     image: mysql:8.0
     restart: always
+    env_file: ./.env
     environment:
-      - MYSQL_DATABASE=postgres
-      - MYSQL_USER=postgres
-      - MYSQL_PASSWORD
+      - MYSQL_ROOT_PASSWORD=$DB_PASSWORD
+      - MYSQL_DATABASE=$DB_NAME
     ports:
-      - '8889:8889'
+      - $DB_LOCAL_PORT:$DB_DOCKER_PORT    
     volumes: 
-      - my-db:/var/lib/mysql
+      - db:/var/lib/mysql
   api:
     container_name: smartac_api
     build:
@@ -21,12 +21,11 @@ services:
     ports:
       - 8000:8000
     environment:
-      NODE_ENV: production
-      DB_HOST: db
-      DB_PORT: 8889
-      DB_USER: root
-      DB_PASSWORD: root
-      DB_NAME: smartac
+      - DB_HOST=db
+      - DB_USER=$DB_USERNAME
+      - DB_PASSWORD=$DB_PASSWORD
+      - DB_NAME=$DB_NAME
+      - DB_PORT=$DB_DOCKER_PORT
     links:
       - db
     volumes:

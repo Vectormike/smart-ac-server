@@ -60,13 +60,9 @@ Run Migration
 docker exec -t -i app knex migrate:latest
 ```
 
-### Database schema
-
-![Screenshot](lendsqr.png)
-
 ## API Documentation
 
-To view the list of available APIs and their specifications, vist [Postman API documentation](https://documenter.getpostman.com/view/5622145/UVsHT7j6)
+To view the list of available APIs and their specifications, vist [Postman API documentation](https://documenter.getpostman.com/view/5622145/UVsHV8mc)
 
 ## Features
 
