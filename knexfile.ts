@@ -24,6 +24,9 @@ module.exports = {
       tableName: 'knex_migrations',
       directory: __dirname + '/src/database/migrations',
     },
+    seeds: {
+      directory: __dirname + '/src/database/seeds',
+    },
   },
 
   test: {
@@ -43,7 +46,10 @@ module.exports = {
       loadExtensions: ['.ts'],
       extension: 'ts',
       tableName: 'knex_migrations',
-      directory: __dirname + './src/database/migrations',
+      directory: __dirname + '/src/database/migrations',
+    },
+    seeds: {
+      directory: __dirname + '/src/database/seeds',
     },
   },
 
@@ -64,7 +70,10 @@ module.exports = {
       loadExtensions: ['.ts'],
       extension: 'ts',
       tableName: 'knex_migrations',
-      directory: __dirname + './src/database/migrations',
+      directory: __dirname + '/src/database/migrations',
+    },
+    seeds: {
+      directory: __dirname + '/src/database/seeds',
     },
   },
 };

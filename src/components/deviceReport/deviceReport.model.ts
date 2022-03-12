@@ -9,6 +9,7 @@ export class DeviceReport extends Model {
   healthStatus: string;
   deviceReadingDate: Date;
   serverReadingDate: Date;
+  invalidDataCount: number;
 
   static tableName = 'deviceReports'; // database table name
   static idColumn = 'id'; // id column name

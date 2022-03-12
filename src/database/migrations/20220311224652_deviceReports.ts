@@ -10,6 +10,7 @@ export async function up(knex: Knex): Promise<void> {
     t.enum('healthStatus', ['OK', 'needs_filter', 'needs_service']);
     t.date('deviceReadingDate');
     t.date('serverReadingDate');
+    t.integer('invalidDataCount').defaultTo(0);
   });
 }
 

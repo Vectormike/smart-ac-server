@@ -16,9 +16,9 @@ export function DeviceReportControllerFactory(deviceReportService: DeviceReportS
       try {
         const deviceReport = await deviceReportService.addDeviceReport(body);
         if (deviceReport.status === 'error') {
-          return res.status(httpStatus.CREATED).json({
+          return res.status(httpStatus.INTERNAL_SERVER_ERROR).json({
             status: 'success',
-            statusCode: httpStatus.CREATED,
+            statusCode: httpStatus.INTERNAL_SERVER_ERROR,
             message: 'Device report not registered',
           });
         }

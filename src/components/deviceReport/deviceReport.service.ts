@@ -9,6 +9,7 @@ export class DeviceReportService {
   constructor(private readonly deviceReportModel = DeviceReport, private deviceModel = Device, private readonly alertService: AlertService) {}
   async addDeviceReport(data: CreateDeviceReportInput): Promise<any> {
     const utcDate = new Date(Date.now());
+
     try {
       // Find the device via serial number
       const device = await this.deviceModel.query().findOne({ serialNumber: data.serialNumber });
@@ -25,8 +26,6 @@ export class DeviceReportService {
       for (const key in sensorValues) {
         if (key === 'temperature') {
           if (sensorValues[key] < -30.0 || sensorValues[key] > 100.0) {
-            console.log('Alert 1');
-
             // Send alert
             await this.alertService.saveAlertData({
               serialNumber: data.serialNumber,
@@ -51,8 +50,6 @@ export class DeviceReportService {
           }
         } else if (key === 'carbonMonoxide') {
           if (sensorValues[key] < 0.0 || sensorValues[key] > 1000.0) {
-            console.log('Alert 3');
-
             // Send alert
             await this.alertService.saveAlertData({
               serialNumber: data.serialNumber,
@@ -66,8 +63,6 @@ export class DeviceReportService {
         }
       }
 
-      // socket.emit('Hi');
-
       // Append device readings
       const deviceReports = await this.deviceReportModel.query().insert({
         deviceId: device.id,
@@ -78,6 +73,8 @@ export class DeviceReportService {
         deviceReadingDate: data.deviceReadingDate,
         serverReadingDate: utcDate,
       });
+
+      logger.info('Server readings taken...');
 
       return deviceReports;
     } catch (error) {
