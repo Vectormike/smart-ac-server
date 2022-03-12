@@ -85,3 +85,114 @@ info: Request🏷️: Mar-11-2022 20:58:15: Server server started at http://loca
 info: Request🏷️: Mar-11-2022 20:59:10: Server server started at http://localhost:8000
 info: Request🏷️: Mar-11-2022 20:59:50: Server server started at http://localhost:8000
 info: Request🏷️: Mar-11-2022 21:13:16: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 23:58:08: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 23:58:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-11-2022 23:58:22: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:26:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:26:29: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:30:11: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:36:09: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:37:14: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:37:26: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:38:59: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:39:21: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:40:28: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:40:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:42:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:43:23: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:44:46: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:45:43: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:48:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:49:15: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:50:09: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:53:12: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:56:52: ::1 - - [12/Mar/2022:05:56:52 +0000] "POST /api/add-sensor-report HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:57:16: ::1 - - [12/Mar/2022:05:57:16 +0000] "POST /api/add-device-report HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:57:40: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:57:40: ::1 - - [12/Mar/2022:05:57:40 +0000] "POST /api/add-device-report HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:57:41: ::1 - - [12/Mar/2022:05:57:41 +0000] "POST /api/add-device-report HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:58:03: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:58:22: ::1 - - [12/Mar/2022:05:58:22 +0000] "POST /api/add-device-report HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:59:04: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 06:59:05: validation error
+info: Request🏷️: Mar-12-2022 06:59:05: Serial number is required
+info: Request🏷️: Mar-12-2022 06:59:05: request>>{"temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 06:59:05: ::1 - - [12/Mar/2022:05:59:05 +0000] "POST /api/add-device-report HTTP/1.1" 400 167 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:59:40: validation error
+info: Request🏷️: Mar-12-2022 06:59:40: Temperature is required
+info: Request🏷️: Mar-12-2022 06:59:40: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 06:59:40: ::1 - - [12/Mar/2022:05:59:40 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 06:59:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:00:03: validation error
+info: Request🏷️: Mar-12-2022 07:00:03: Temperature is required
+info: Request🏷️: Mar-12-2022 07:00:03: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:00:03: ::1 - - [12/Mar/2022:06:00:03 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:01:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:01:08: validation error
+info: Request🏷️: Mar-12-2022 07:01:08: Temperature is required
+info: Request🏷️: Mar-12-2022 07:01:08: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:01:08: ::1 - - [12/Mar/2022:06:01:08 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:01:09: validation error
+info: Request🏷️: Mar-12-2022 07:01:09: Temperature is required
+info: Request🏷️: Mar-12-2022 07:01:09: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:01:09: ::1 - - [12/Mar/2022:06:01:09 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:06: validation error
+info: Request🏷️: Mar-12-2022 07:02:06: Temperature is required
+info: Request🏷️: Mar-12-2022 07:02:06: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:06: ::1 - - [12/Mar/2022:06:02:06 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:17: validation error
+info: Request🏷️: Mar-12-2022 07:02:17: Serial number is required
+info: Request🏷️: Mar-12-2022 07:02:17: request>>{"temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:17: ::1 - - [12/Mar/2022:06:02:17 +0000] "POST /api/add-device-report HTTP/1.1" 400 167 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:20: validation error
+info: Request🏷️: Mar-12-2022 07:02:20: Temperature is required
+info: Request🏷️: Mar-12-2022 07:02:20: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:20: ::1 - - [12/Mar/2022:06:02:20 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:22: validation error
+info: Request🏷️: Mar-12-2022 07:02:22: Temperature is required
+info: Request🏷️: Mar-12-2022 07:02:22: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:22: ::1 - - [12/Mar/2022:06:02:22 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:34: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:02:36: validation error
+info: Request🏷️: Mar-12-2022 07:02:36: Temperature is required
+info: Request🏷️: Mar-12-2022 07:02:36: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:36: ::1 - - [12/Mar/2022:06:02:36 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:45: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:02:45: validation error
+info: Request🏷️: Mar-12-2022 07:02:45: Temperatue is required
+info: Request🏷️: Mar-12-2022 07:02:45: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:02:45: ::1 - - [12/Mar/2022:06:02:45 +0000] "POST /api/add-device-report HTTP/1.1" 400 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:02:50: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:03:07: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:03:17: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:03:35: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:03:35: validation error
+info: Request🏷️: Mar-12-2022 07:03:35: Temperature is required
+info: Request🏷️: Mar-12-2022 07:03:35: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:03:35: ::1 - - [12/Mar/2022:06:03:35 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:06:19: Server server started at http://localhost:8000
+info: Request🏷️: Mar-12-2022 07:06:21: ::1 - - [12/Mar/2022:06:06:21 +0000] "POST /api/register-device HTTP/1.1" 201 318 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:06:27: validation error
+info: Request🏷️: Mar-12-2022 07:06:27: Temperature is required
+info: Request🏷️: Mar-12-2022 07:06:27: request>>{"serialNumber":"123456789","temperature":100,"humidity":100,"carbonMonoxide":100,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 07:06:27: ::1 - - [12/Mar/2022:06:06:27 +0000] "POST /api/add-device-report HTTP/1.1" 400 163 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 07:07:08: Server server started at http://localhost:8000

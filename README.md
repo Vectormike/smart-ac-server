@@ -1,4 +1,4 @@
-# Lendsqr API
+# SmartAC API
 
 This application allows you to create an account while being able to deposit, transfer and withdraw from it.
 
@@ -9,8 +9,8 @@ If you would still prefer to do the installation manually, follow these steps:
 Clone the repo:
 
 ```bash
-git clone --depth 1 https://github.com/Vectormike/lite-bank
-cd lite-bank
+git clone --depth 1 https://github.com/Vectormike/smartAC
+cd smartAC
 
 ```
 
@@ -68,19 +68,6 @@ docker exec -t -i app knex migrate:latest
 
 To view the list of available APIs and their specifications, vist [Postman API documentation](https://documenter.getpostman.com/view/5622145/UVsHT7j6)
 
-### API Endpoints
-
-List of available routes:
-
-**Auth routes**:\
-`POST /api/auth/register` - register\
-`POST /api/auth/login` - login\
-
-**Account routes**:\
-`POST /api/account/deposit` - fund\
-`POST /api/account/transfer` - transfer\
-`POST /api/account/withdraw` - withdraw\
-
 ## Features
 
 - **MySQL database**: [MySQL](https://www.mysql.com) object data modeling using [Knex](https://knex.com)
@@ -109,10 +96,8 @@ BASE_URL_DEV=http://localhost:8000
 BCRYPT_SALT=12
 REFRESH_TOKEN_SECRET=hththjjkekdkkkdkd
 JWT_AUTH_SECRET=kdkdkkdkk
-ELK_VERSION=7.5.1
 
-DB_NAME=lendsqr
-TEST_DB_NAME=lendsqr_test
+DB_NAME=smartac
 DB_HOST=127.0.0.1
 DB_PORT=8889
 DB_USERNAME=root
