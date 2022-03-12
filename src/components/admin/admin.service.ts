@@ -6,6 +6,7 @@ import { TokenService } from '../token/token.service';
 import { CreateAdminInput, LoginInput } from './admin.interface';
 import { LoggedInType } from './admin.type';
 import { AdminShape, Admin } from '../admin/admin.model';
+import { Device } from '../device/device.model';
 import logger from '../../logger';
 
 export class AdminService {
@@ -13,7 +14,7 @@ export class AdminService {
   REFRESH_TOKEN_SECRET: string = env.get('REFRESH_TOKEN_SECRET');
   private BCRYPT_SALT: number = parseInt(env.get('BCRYPT_SALT'));
 
-  constructor(private readonly adminModel = Admin, private readonly tokenService: TokenService) {}
+  constructor(private readonly adminModel = Admin, private readonly deviceModel = Device) {}
 
   /**
    * Generates JWT for a user
@@ -176,5 +177,15 @@ export class AdminService {
         // });
       });
     });
+  }
+
+  async getDevices(): Promise<any> {
+    try {
+      const devices = await this.deviceModel.query().select('*').orderBy('id', 'desc');
+      return devices;
+    } catch (error) {
+      logger.info(JSON.stringify(error));
+      throw error;
+    }
   }
 }

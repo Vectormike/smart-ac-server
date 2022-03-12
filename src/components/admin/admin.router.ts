@@ -12,10 +12,9 @@ export function AuthRouter(options: ComponentRouterOptions<IAdminController, Adm
 
   router.post('/login', validator.LoginDto.validate, controller.login);
 
-  /**
-   * @logout
-   */
   router.post('/logout', validator.RefreshTokenDto.validate, controller.logout);
+
+  router.get('/get-devices', controller.getDevices);
 
   return router;
 }

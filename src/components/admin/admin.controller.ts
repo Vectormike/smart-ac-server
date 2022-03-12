@@ -8,6 +8,7 @@ export interface IAdminController {
   register: RequestHandler;
   login: RequestHandler;
   logout: RequestHandler;
+  getDevices: RequestHandler;
 }
 
 export function AdminControllerFactory(adminService: AdminService): IAdminController {
@@ -64,6 +65,21 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
           message: 'Successfully logged out',
           statusCode: httpStatus.OK,
           status: 'success',
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    async getDevices(req: Request, res: Response, next: NextFunction): Promise<any> {
+      try {
+        const devices = await adminService.getDevices();
+        return res.status(httpStatus.OK).send({
+          message: 'Devices fetched successfully',
+          statusCode: httpStatus.OK,
+          status: 'success',
+          data: devices,
         });
       } catch (error) {
         logger.info(JSON.stringify(error));
