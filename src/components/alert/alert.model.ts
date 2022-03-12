@@ -5,6 +5,7 @@ export class Alert extends Model {
   serialNumber: string;
   alert: string;
   alertDate: Date;
+  resolveDate: Date;
   deviceReportId: number;
   viewState: string;
   resolved: string;

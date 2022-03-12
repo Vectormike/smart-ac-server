@@ -3,9 +3,10 @@ import { Device } from '../device/device.model';
 import { CreateDeviceReportInput } from './deviceReport.interface';
 import logger from '../../logger';
 import { BadRequestError, UnauthorizedError, NotFoundError, ForbiddenError } from '../../errors';
-import { alertService } from '../alert';
+import { AlertService } from '../../components/alert/alert.service';
+
 export class DeviceReportService {
-  constructor(private readonly deviceReportModel = DeviceReport, private deviceModel = Device, private readonly alertService = alertService) {}
+  constructor(private readonly deviceReportModel = DeviceReport, private deviceModel = Device, private readonly alertService: AlertService) {}
   async addDeviceReport(data: CreateDeviceReportInput): Promise<any> {
     const utcDate = new Date(Date.now());
     try {
@@ -19,10 +20,13 @@ export class DeviceReportService {
       // Check for out of range values
       let sensorValues = { temperature: data.temperature, humidity: data.humidity, carbonMonoxide: data.carbonMonoxide };
 
+      logger.info('Server taking readings...');
+
       for (const key in sensorValues) {
         if (key === 'temperature') {
           if (sensorValues[key] < -30.0 || sensorValues[key] > 100.0) {
-            console.log('1', sensorValues[key]);
+            console.log('Alert 1');
+
             // Send alert
             await this.alertService.saveAlertData({
               serialNumber: data.serialNumber,
@@ -35,11 +39,10 @@ export class DeviceReportService {
           }
         } else if (key === 'humidity') {
           if (sensorValues[key] < 0.0 || sensorValues[key] > 100.0) {
-            console.log('1', sensorValues[key]);
             // Send alert
             await this.alertService.saveAlertData({
               serialNumber: data.serialNumber,
-              alert: 'Sensor temperature has value out of range',
+              alert: 'Sensor humidity has value out of range',
               alertDate: utcDate,
               deviceReportId: device.id,
               viewState: 'new',
@@ -48,11 +51,12 @@ export class DeviceReportService {
           }
         } else if (key === 'carbonMonoxide') {
           if (sensorValues[key] < 0.0 || sensorValues[key] > 1000.0) {
-            console.log('1', sensorValues[key]);
+            console.log('Alert 3');
+
             // Send alert
             await this.alertService.saveAlertData({
               serialNumber: data.serialNumber,
-              alert: 'Sensor temperature has value out of range',
+              alert: 'Sensor carbon monoxide has value out of range',
               alertDate: utcDate,
               deviceReportId: device.id,
               viewState: 'new',

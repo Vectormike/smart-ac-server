@@ -14,12 +14,18 @@ export function DeviceReportControllerFactory(deviceReportService: DeviceReportS
       logger.info(body);
 
       try {
-        const deviceReport = deviceReportService.addDeviceReport(body);
+        const deviceReport = await deviceReportService.addDeviceReport(body);
+        if (deviceReport.status === 'error') {
+          return res.status(httpStatus.CREATED).json({
+            status: 'success',
+            statusCode: httpStatus.CREATED,
+            message: 'Device report not registered',
+          });
+        }
         return res.status(httpStatus.CREATED).json({
           status: 'success',
-          statusCode: httpStatus.CREATED,
+          statusCode: httpStatus.INTERNAL_SERVER_ERROR,
           message: 'Device report registered successfully',
-          data: deviceReport,
         });
       } catch (error) {
         logger.info(JSON.stringify(error));

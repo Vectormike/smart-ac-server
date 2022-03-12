@@ -672,3 +672,357 @@ info: Request🏷️: Mar-12-2022 11:57:40: ::1 - - [12/Mar/2022:10:57:40 +0000]
 info: Request🏷️: Mar-12-2022 12:13:02: Server server started at http://localhost:5000
 info: Request🏷️: Mar-12-2022 12:13:39: Server server started at http://localhost:5000
 info: Request🏷️: Mar-12-2022 12:14:07: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 12:16:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:02:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:14:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:16:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:34:58: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:35:22: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:35:27: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:35:39: [object Object]
+info: Request🏷️: Mar-12-2022 13:35:39: ::1 - - [12/Mar/2022:12:35:39 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:35:40: {}
+info: Request🏷️: Mar-12-2022 13:35:56: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:37:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:37:24: request>>{"serialNumber":"123456789","temperature":1000,"humidity":10,"carbonMonoxide":10,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 13:37:24: ::1 - - [12/Mar/2022:12:37:24 +0000] "POST /api/add-device-report HTTP/1.1" 401 189 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:38:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:38:02: request>>{"serialNumber":"123456789","temperature":1000,"humidity":10,"carbonMonoxide":10,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 13:38:02: ::1 - - [12/Mar/2022:12:38:02 +0000] "POST /api/add-device-report HTTP/1.1" 401 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:38:23: request>>{"serialNumber":"123456789","temperature":1000,"humidity":10,"carbonMonoxide":10,"healthStatus":"OK","deviceReadingDate":"2021-02-01"}
+info: Request🏷️: Mar-12-2022 13:38:23: ::1 - - [12/Mar/2022:12:38:23 +0000] "POST /api/add-device-report HTTP/1.1" 401 161 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:38:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:38:42: [object Object]
+info: Request🏷️: Mar-12-2022 13:38:42: ::1 - - [12/Mar/2022:12:38:42 +0000] "POST /api/add-device-report HTTP/1.1" 201 97 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:38:42: {}
+info: Request🏷️: Mar-12-2022 13:38:55: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:38:55: [object Object]
+info: Request🏷️: Mar-12-2022 13:38:55: ::1 - - [12/Mar/2022:12:38:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:38:55: {}
+info: Request🏷️: Mar-12-2022 13:39:20: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:39:49: [object Object]
+info: Request🏷️: Mar-12-2022 13:39:49: ::1 - - [12/Mar/2022:12:39:49 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:39:49: {}
+info: Request🏷️: Mar-12-2022 13:40:16: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:40:16: [object Object]
+info: Request🏷️: Mar-12-2022 13:40:16: ::1 - - [12/Mar/2022:12:40:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:40:16: {}
+info: Request🏷️: Mar-12-2022 13:40:20: [object Object]
+info: Request🏷️: Mar-12-2022 13:40:20: ::1 - - [12/Mar/2022:12:40:20 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:40:20: {}
+info: Request🏷️: Mar-12-2022 13:40:58: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:41:01: [object Object]
+info: Request🏷️: Mar-12-2022 13:41:01: ::1 - - [12/Mar/2022:12:41:01 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:41:02: {}
+info: Request🏷️: Mar-12-2022 13:41:14: [object Object]
+info: Request🏷️: Mar-12-2022 13:41:14: ::1 - - [12/Mar/2022:12:41:14 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:41:14: {}
+info: Request🏷️: Mar-12-2022 13:41:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:41:28: [object Object]
+info: Request🏷️: Mar-12-2022 13:41:28: ::1 - - [12/Mar/2022:12:41:28 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:41:28: {}
+info: Request🏷️: Mar-12-2022 13:41:38: [object Object]
+info: Request🏷️: Mar-12-2022 13:41:38: ::1 - - [12/Mar/2022:12:41:38 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:41:38: {}
+info: Request🏷️: Mar-12-2022 13:42:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:42:15: [object Object]
+info: Request🏷️: Mar-12-2022 13:42:15: {}
+info: Request🏷️: Mar-12-2022 13:43:00: ::1 - - [12/Mar/2022:12:43:00 +0000] "POST /api/add-device-report HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:43:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:43:32: [object Object]
+info: Request🏷️: Mar-12-2022 13:43:32: {}
+info: Request🏷️: Mar-12-2022 13:43:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:43:43: [object Object]
+info: Request🏷️: Mar-12-2022 13:43:43: {}
+info: Request🏷️: Mar-12-2022 13:43:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:44:00: [object Object]
+info: Request🏷️: Mar-12-2022 13:44:00: {}
+info: Request🏷️: Mar-12-2022 13:44:00: ::1 - - [12/Mar/2022:12:44:00 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:44:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:44:41: [object Object]
+info: Request🏷️: Mar-12-2022 13:44:41: {}
+info: Request🏷️: Mar-12-2022 13:44:41: ::1 - - [12/Mar/2022:12:44:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:45:32: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:45:37: [object Object]
+info: Request🏷️: Mar-12-2022 13:45:37: {}
+info: Request🏷️: Mar-12-2022 13:45:37: ::1 - - [12/Mar/2022:12:45:37 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:46:18: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:47:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:47:16: [object Object]
+info: Request🏷️: Mar-12-2022 13:47:16: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:47:16: {}
+info: Request🏷️: Mar-12-2022 13:47:16: ::1 - - [12/Mar/2022:12:47:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:47:55: [object Object]
+info: Request🏷️: Mar-12-2022 13:47:55: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:47:55: {}
+info: Request🏷️: Mar-12-2022 13:47:55: ::1 - - [12/Mar/2022:12:47:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:48:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:48:47: [object Object]
+info: Request🏷️: Mar-12-2022 13:48:47: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:48:47: {}
+info: Request🏷️: Mar-12-2022 13:48:47: ::1 - - [12/Mar/2022:12:48:47 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:49:16: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:49:16: [object Object]
+info: Request🏷️: Mar-12-2022 13:49:16: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:49:16: {}
+info: Request🏷️: Mar-12-2022 13:49:16: ::1 - - [12/Mar/2022:12:49:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:49:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:49:34: [object Object]
+info: Request🏷️: Mar-12-2022 13:49:34: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:49:34: {}
+info: Request🏷️: Mar-12-2022 13:49:34: ::1 - - [12/Mar/2022:12:49:34 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:51:17: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:51:18: [object Object]
+info: Request🏷️: Mar-12-2022 13:51:18: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:51:18: {}
+info: Request🏷️: Mar-12-2022 13:51:18: ::1 - - [12/Mar/2022:12:51:18 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:51:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:51:41: [object Object]
+info: Request🏷️: Mar-12-2022 13:51:41: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:51:41: {}
+info: Request🏷️: Mar-12-2022 13:51:41: ::1 - - [12/Mar/2022:12:51:41 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:52:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:52:15: [object Object]
+info: Request🏷️: Mar-12-2022 13:52:15: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:52:15: {}
+info: Request🏷️: Mar-12-2022 13:52:15: ::1 - - [12/Mar/2022:12:52:15 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:52:43: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:52:44: [object Object]
+info: Request🏷️: Mar-12-2022 13:52:44: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:52:44: {}
+info: Request🏷️: Mar-12-2022 13:52:44: ::1 - - [12/Mar/2022:12:52:44 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:52:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:52:55: [object Object]
+info: Request🏷️: Mar-12-2022 13:52:55: Server taking readings...
+info: Request🏷️: Mar-12-2022 13:52:55: {}
+info: Request🏷️: Mar-12-2022 13:52:55: ::1 - - [12/Mar/2022:12:52:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 78 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 13:53:58: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:55:12: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:55:20: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 13:55:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:06:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:06:26: [object Object]
+info: Request🏷️: Mar-12-2022 14:06:26: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:06:27: ::1 - - [12/Mar/2022:13:06:27 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:07:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:07:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:07:56: [object Object]
+info: Request🏷️: Mar-12-2022 14:07:56: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:07:56: ::1 - - [12/Mar/2022:13:07:56 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:08:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:08:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:08:33: [object Object]
+info: Request🏷️: Mar-12-2022 14:08:33: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:08:34: ::1 - - [12/Mar/2022:13:08:34 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:08:52: [object Object]
+info: Request🏷️: Mar-12-2022 14:08:52: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:08:52: ::1 - - [12/Mar/2022:13:08:52 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:09:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:09:21: [object Object]
+info: Request🏷️: Mar-12-2022 14:09:21: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:09:22: ::1 - - [12/Mar/2022:13:09:22 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:09:29: [object Object]
+info: Request🏷️: Mar-12-2022 14:09:29: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:09:29: ::1 - - [12/Mar/2022:13:09:29 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:10:21: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:10:22: [object Object]
+info: Request🏷️: Mar-12-2022 14:10:22: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:10:22: ::1 - - [12/Mar/2022:13:10:22 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:11:48: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:11:49: [object Object]
+info: Request🏷️: Mar-12-2022 14:11:49: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:11:49: ::1 - - [12/Mar/2022:13:11:49 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:12:16: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:12:16: [object Object]
+info: Request🏷️: Mar-12-2022 14:12:16: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:12:16: ::1 - - [12/Mar/2022:13:12:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:12:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:12:34: [object Object]
+info: Request🏷️: Mar-12-2022 14:12:34: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:12:35: ::1 - - [12/Mar/2022:13:12:35 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:12:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:12:55: [object Object]
+info: Request🏷️: Mar-12-2022 14:12:55: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:12:55: ::1 - - [12/Mar/2022:13:12:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:13:27: [object Object]
+info: Request🏷️: Mar-12-2022 14:13:27: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:13:27: ::1 - - [12/Mar/2022:13:13:27 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:13:33: [object Object]
+info: Request🏷️: Mar-12-2022 14:13:33: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:13:33: ::1 - - [12/Mar/2022:13:13:33 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:13:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:13:57: [object Object]
+info: Request🏷️: Mar-12-2022 14:13:57: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:13:57: ::1 - - [12/Mar/2022:13:13:57 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:14:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:14:53: [object Object]
+info: Request🏷️: Mar-12-2022 14:14:53: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:14:53: ::1 - - [12/Mar/2022:13:14:53 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:14:55: [object Object]
+info: Request🏷️: Mar-12-2022 14:14:55: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:14:55: ::1 - - [12/Mar/2022:13:14:55 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:15:05: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:15:06: [object Object]
+info: Request🏷️: Mar-12-2022 14:15:06: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:15:06: ::1 - - [12/Mar/2022:13:15:06 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:15:09: [object Object]
+info: Request🏷️: Mar-12-2022 14:15:09: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:15:09: ::1 - - [12/Mar/2022:13:15:09 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:15:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:15:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:15:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:15:44: [object Object]
+info: Request🏷️: Mar-12-2022 14:15:44: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:15:44: ::1 - - [12/Mar/2022:13:15:44 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:15:46: [object Object]
+info: Request🏷️: Mar-12-2022 14:15:46: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:15:46: ::1 - - [12/Mar/2022:13:15:46 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:15:48: [object Object]
+info: Request🏷️: Mar-12-2022 14:15:48: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:15:48: ::1 - - [12/Mar/2022:13:15:48 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:16:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:16:39: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:16:40: [object Object]
+info: Request🏷️: Mar-12-2022 14:16:40: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:16:40: ::1 - - [12/Mar/2022:13:16:40 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:16:42: [object Object]
+info: Request🏷️: Mar-12-2022 14:16:42: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:16:42: ::1 - - [12/Mar/2022:13:16:42 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:16:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:16:56: [object Object]
+info: Request🏷️: Mar-12-2022 14:16:56: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:16:56: ::1 - - [12/Mar/2022:13:16:56 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:16:57: [object Object]
+info: Request🏷️: Mar-12-2022 14:16:57: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:16:57: ::1 - - [12/Mar/2022:13:16:57 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:17:00: [object Object]
+info: Request🏷️: Mar-12-2022 14:17:00: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:17:00: ::1 - - [12/Mar/2022:13:17:00 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:17:02: [object Object]
+info: Request🏷️: Mar-12-2022 14:17:02: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:17:02: ::1 - - [12/Mar/2022:13:17:02 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:17:16: [object Object]
+info: Request🏷️: Mar-12-2022 14:17:16: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:17:16: ::1 - - [12/Mar/2022:13:17:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:17:24: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:17:50: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 14:17:51: [object Object]
+info: Request🏷️: Mar-12-2022 14:17:51: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:17:51: ::1 - - [12/Mar/2022:13:17:51 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:18:16: [object Object]
+info: Request🏷️: Mar-12-2022 14:18:16: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:18:16: ::1 - - [12/Mar/2022:13:18:16 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:18:25: [object Object]
+info: Request🏷️: Mar-12-2022 14:18:25: Server taking readings...
+info: Request🏷️: Mar-12-2022 14:18:25: ::1 - - [12/Mar/2022:13:18:25 +0000] "POST /api/add-device-report HTTP/1.1" 201 87 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 14:18:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:27:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:28:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:32:55: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:33:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:40:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:41:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:42:04: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:42:09: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:44:18: ::1 - - [12/Mar/2022:14:44:18 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:48:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:48:55: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:49:02: ::1 - - [12/Mar/2022:14:49:02 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:49:17: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:49:25: ::1 - - [12/Mar/2022:14:49:25 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:50:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:50:11: {}
+info: Request🏷️: Mar-12-2022 15:50:11: {}
+info: Request🏷️: Mar-12-2022 15:50:11: {}
+info: Request🏷️: Mar-12-2022 15:50:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:50:42: {}
+info: Request🏷️: Mar-12-2022 15:50:42: {}
+info: Request🏷️: Mar-12-2022 15:50:42: {}
+info: Request🏷️: Mar-12-2022 15:51:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:51:15: {}
+info: Request🏷️: Mar-12-2022 15:51:15: {}
+info: Request🏷️: Mar-12-2022 15:51:15: {}
+info: Request🏷️: Mar-12-2022 15:51:52: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:51:56: {}
+info: Request🏷️: Mar-12-2022 15:51:56: {}
+info: Request🏷️: Mar-12-2022 15:51:56: {}
+info: Request🏷️: Mar-12-2022 15:52:56: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:52:58: {}
+info: Request🏷️: Mar-12-2022 15:52:58: {}
+info: Request🏷️: Mar-12-2022 15:52:58: {}
+info: Request🏷️: Mar-12-2022 15:55:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:55:22: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 15:55:22: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-12-2022 15:55:27: ::1 - - [12/Mar/2022:14:55:27 +0000] "GET /api/resolve-alert/87 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:56:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:56:28: ::1 - - [12/Mar/2022:14:56:28 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 201 90 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:57:00: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:57:03: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:57:06: ::1 - - [12/Mar/2022:14:57:06 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 200 81 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-12-2022 15:57:32: Server server started at http://localhost:5000
+info: Request🏷️: Mar-12-2022 15:57:33: ::1 - - [12/Mar/2022:14:57:33 +0000] "GET /api/resolve-alert/87 HTTP/1.1" 200 72 "-" "PostmanRuntime/7.29.0"
+
