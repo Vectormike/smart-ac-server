@@ -9,7 +9,8 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - '.:/app'
+      - './:/src'
+      - './:/src/node_modules'
   
   mysql_server:
     image: mysql:8.0

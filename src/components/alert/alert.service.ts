@@ -5,9 +5,9 @@ import logger from '../../logger';
 export class AlertService {
   constructor(private readonly alertModel = Alert) {}
 
+  // Check for duplicates and merge
   private async checkDuplicateAlert(data: CreateAlertInput, newDate: Date): Promise<any> {
     try {
-      // Check for duplicates and merge
       const duplicateAlert = await this.alertModel.query().where({ alert: data.alert, serialNumber: data.serialNumber, resolved: 'new' });
       console.log(duplicateAlert.length);
 
@@ -20,6 +20,11 @@ export class AlertService {
     }
   }
 
+  /**
+   * BE-DEV-2 - A device will continually report its sensor readings to the server (secure endpoint, requires auth)
+   * @param data
+   * @returns
+   */
   async saveAlertData(data: CreateAlertInput): Promise<any> {
     const utcDate = new Date(Date.now());
 
@@ -43,6 +48,12 @@ export class AlertService {
     }
   }
 
+  /**
+   * BE-DEV-5 - Device alerts may self resolve (internal logic)
+   * @param req
+   * @param res
+   * @returns
+   */
   async resolveAlert(alertId: string): Promise<any> {
     const utcDate = new Date(Date.now());
 

@@ -2793,3 +2793,46 @@ Error: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
     at Module.load (node:internal/modules/cjs/loader:975:32)
     at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+info: Request🏷️: Mar-13-2022 19:05:03: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:05:36: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 19:05:36: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8889,"fatal":true}
+info: Request🏷️: Mar-13-2022 19:05:36: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8889,"fatal":true}
+info: Request🏷️: Mar-13-2022 19:05:36: request>>{}
+info: Request🏷️: Mar-13-2022 19:05:36: ::1 - - [13/Mar/2022:18:05:36 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-13 HTTP/1.1" 500 177 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 19:06:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:06:53: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 19:06:53: Aggregating...
+info: Request🏷️: Mar-13-2022 19:06:53: ::1 - - [13/Mar/2022:18:06:53 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 86 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 19:15:39: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:17:43: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:20:18: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:23:04: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:24:12: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:24:47: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:24:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:24:55: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:25:06: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:25:56: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:26:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:29:31: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:29:33: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:29:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:32:17: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:39:50: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:41:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:42:03: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:42:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:43:48: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:44:21: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:45:16: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:46:53: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:47:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:48:37: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:49:08: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:49:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:50:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:51:41: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:53:49: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 19:55:34: Server server started at http://localhost:5000

@@ -9,6 +9,11 @@ export class DeviceService {
   private DEVICE_SHARED_SECRET: string = env.get('DEVICE_SHARED_SECRET');
 
   constructor(private readonly deviceModel = Device, private readonly tokenService: TokenService) {}
+  /**
+   * BE-DEV-1 - A device can self-register with the server (open endpoint, no auth)
+   * @param data
+   * @returns
+   */
   async registerDevice(data: CreateDeviceInput): Promise<DeviceResponseType> {
     const utcDate = new Date(Date.now());
 

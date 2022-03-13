@@ -3,6 +3,7 @@ import httpStatus from 'http-status';
 import logger from '../../logger';
 import { AlertService } from '../../components/alert/alert.service';
 import { AdminService } from './admin.service';
+import { IHelperResponse } from '../../shared/types/Response';
 
 export interface IAdminController {
   register: RequestHandler;
@@ -20,18 +21,18 @@ export interface IAdminController {
 
 export function AdminControllerFactory(adminService: AdminService): IAdminController {
   return {
-    async register(req: Request, res: Response, next: NextFunction): Promise<any> {
+    async register(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { body } = req;
 
       try {
         const user = await adminService.register(body);
 
-        return res.status(httpStatus.CREATED).json({
+        return {
+          success: true,
+          status: httpStatus.CREATED,
           message: 'User account was created successfully.',
-          status: 'success',
-          statusCode: httpStatus.CREATED,
           data: user,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -39,167 +40,220 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
     },
 
     /**
-     * Attempts to log in a user
+     * BE-ADM-1 - User Login (open endpoint, no auth)
+     * @param req
+     * @param res
+     * @param next
+     * @returns
      */
-    async login(req: Request, res: Response, next: NextFunction): Promise<any> {
+    async login(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { body } = req;
 
       try {
         const loginData = await adminService.login(body);
-
-        return res.status(httpStatus.OK).json({
+        return {
           message: 'Logged in successfully',
-          status: 'success',
-          statusCode: httpStatus.OK,
+          success: true,
+          status: httpStatus.OK,
           data: loginData,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async logout(req: Request, res: Response, next: NextFunction): Promise<any> {
+    async logout(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       try {
         const { refreshToken } = req.body;
 
         await adminService.logout(refreshToken);
 
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Successfully logged out',
-          statusCode: httpStatus.OK,
-          status: 'success',
-        });
+          status: httpStatus.OK,
+          success: true,
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async getDevices(req: Request, res: Response, next: NextFunction): Promise<any> {
+    /**
+     * BE-ADM-3 - List recently registered devices (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @param next
+     * @returns
+     */
+    async getDevices(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { query } = req;
 
       try {
         const devices = await adminService.getDevices(query);
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Devices fetched successfully',
-          statusCode: httpStatus.OK,
-          status: 'success',
+          status: httpStatus.OK,
+          success: true,
           data: devices,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async getSensorReadings(req: Request, res: Response, next: NextFunction): Promise<any> {
+    /**
+     * BE-ADM-4 - List sensor readings for a device by date range (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @param next
+     * @returns
+     */
+    async getSensorReadings(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { params, query } = req;
 
       try {
         const devices = await adminService.getSensorReadings(params, query);
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Sensor readings fetched successfully',
-          statusCode: httpStatus.OK,
-          status: 'success',
+          status: httpStatus.OK,
+          success: true,
           data: devices,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async listActiveAlerts(req: Request, res: Response, next: NextFunction): Promise<any> {
+    /**
+     * BE-ADM-6 - List alerts active in the system (secure endpoint, requires auth)
+     * @returns
+     */
+    async listActiveAlerts(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       try {
         const device = await adminService.listActiveAlerts();
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Device fetched successfully',
-          statusCode: httpStatus.OK,
-          status: 'success',
+          status: httpStatus.OK,
+          success: true,
           data: device,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async searchDevice(req: Request, res: Response, next: NextFunction): Promise<any> {
+    /**
+     * BE-ADM-10 - Search for a device by serial number (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @param next
+     * @returns
+     */
+    async searchDevice(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { params } = req;
 
       try {
         const device = await adminService.searchDevice(params);
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Device fetched successfully',
-          statusCode: httpStatus.OK,
-          status: 'success',
+          status: httpStatus.OK,
+          success: true,
           data: device,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async markAlertViewed(req: Request, res: Response): Promise<any> {
+    /**
+     * BE-ADM-7 - Alerts can be marked viewed (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @returns
+     */
+    async markAlertViewed(req: Request, res: Response): Promise<IHelperResponse> {
       const { params } = req;
 
       try {
         await adminService.markAlertViewed(params.alertId);
-        return res.status(httpStatus.OK).json({
-          success: 'success',
-          statusCode: httpStatus.OK,
+        return {
+          success: true,
+          status: httpStatus.OK,
           message: 'Device alert resolved',
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
       }
     },
 
-    async markAlertIgnored(req: Request, res: Response): Promise<any> {
+    /**
+     * BE-ADM-8 - Alerts can be marked ignored (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @returns
+     */
+    async markAlertIgnored(req: Request, res: Response): Promise<IHelperResponse> {
       const { params } = req;
 
       try {
         await adminService.markAlertIgnored(params.alertId);
-        return res.status(httpStatus.OK).json({
-          success: 'success',
-          statusCode: httpStatus.OK,
+        return {
+          success: true,
+          status: httpStatus.OK,
           message: 'Device alert resolved',
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
       }
     },
 
-    async aggregateSensorReading(req: Request, res: Response, next: NextFunction): Promise<any> {
+    /**
+     * BE-ADM-5 - Aggregate sensor readings for a device by date range (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @param next
+     * @returns
+     */
+    async aggregateSensorReading(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
       const { params, query } = req;
 
       try {
         const devices = await adminService.aggregateSensorReading(params, query);
-        return res.status(httpStatus.OK).send({
+        return {
           message: 'Sensor readings fetched successfully',
-          statusCode: httpStatus.OK,
-          status: 'success',
+          status: httpStatus.OK,
+          success: true,
           data: devices,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async filteredDevices(req: Request, res: Response): Promise<any> {
+    /**
+     * BE-ADM-11 - Filter devices by registration date (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @returns
+     */
+    async filteredDevices(req: Request, res: Response): Promise<IHelperResponse> {
       const { query } = req;
 
       try {
         const devices = await adminService.filterDevicesByDate(query);
-        return res.status(httpStatus.OK).json({
-          success: 'success',
-          statusCode: httpStatus.OK,
+        return {
+          success: true,
+          status: httpStatus.OK,
           message: 'Device filtered successfully',
           data: devices,
-        });
+        };
       } catch (error) {
         logger.info(JSON.stringify(error));
       }

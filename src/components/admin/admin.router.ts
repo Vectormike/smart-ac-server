@@ -3,7 +3,7 @@ import { IAdminController } from './admin.controller';
 import { ComponentRouterOptions } from '../../shared/types/ComponentRouterOptions';
 import { AdminValidator } from './admin.dto';
 
-export function AuthRouter(options: ComponentRouterOptions<IAdminController, AdminValidator>): Router {
+export function AdminRouter(options: ComponentRouterOptions<IAdminController, AdminValidator>): Router {
   const { controller, validator, guards } = options;
 
   const router = Router();

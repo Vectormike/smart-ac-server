@@ -7,6 +7,11 @@ import { AlertService } from '../../components/alert/alert.service';
 
 export class DeviceReportService {
   constructor(private readonly deviceReportModel = DeviceReport, private deviceModel = Device, private readonly alertService: AlertService) {}
+  /**
+   * BE-DEV-2 - A device will continually report its sensor readings to the server (secure endpoint, requires auth)
+   * @param data
+   * @returns
+   */
   async addDeviceReport(data: CreateDeviceReportInput): Promise<any> {
     const utcDate = new Date(Date.now());
 

@@ -10,7 +10,6 @@ import { AdminShape, Admin } from '../admin/admin.model';
 import { Device } from '../device/device.model';
 import logger from '../../logger';
 import { ParamsDictionary } from 'express-serve-static-core';
-import { ParsedQs } from 'qs';
 
 export class AdminService {
   JWT_AUTH_SECRET: string = env.get('JWT_AUTH_SECRET');
@@ -102,9 +101,6 @@ export class AdminService {
     };
   }
 
-  /**
-   * Creates a new user account
-   */
   async register(data: CreateAdminInput): Promise<any> {
     try {
       const user = await this.createAdmin({
@@ -121,6 +117,13 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-1 - User Login (open endpoint, no auth)
+   * @param req
+   * @param res
+   * @param next
+   * @returns
+   */
   async login(data: LoginInput): Promise<LoggedInType> {
     const genericMessage = 'Invalid email or password';
 
@@ -177,6 +180,11 @@ export class AdminService {
     });
   }
 
+  /**
+   * BE-ADM-3 - List recently registered devices (secure endpoint, requires auth)
+   * @param data
+   * @returns
+   */
   async getDevices(data: any): Promise<any> {
     try {
       let { page, size } = data;
@@ -201,7 +209,13 @@ export class AdminService {
     }
   }
 
-  async getSensorReadings(param: ParamsDictionary, query: ParsedQs) {
+  /**
+   * BE-ADM-4 - List sensor readings for a device by date range (secure endpoint, requires auth)
+   * @param param
+   * @param query
+   * @returns
+   */
+  async getSensorReadings(param: ParamsDictionary, query: any) {
     const serialNumber = param.serialNumber;
     const dateFrom = query.from;
     const dateTo = query.to;
@@ -220,6 +234,10 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-6 - List alerts active in the system (secure endpoint, requires auth)
+   * @returns
+   */
   async listActiveAlerts() {
     try {
       const activeAlerts = await this.alertModel.query().where({ viewState: 'new', resolved: 'new' });
@@ -230,6 +248,11 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-10 - Search for a device by serial number (secure endpoint, requires auth)
+   * @param data
+   * @returns
+   */
   async searchDevice(data: any) {
     const { serialNumber } = data;
 
@@ -243,6 +266,11 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-7 - Alerts can be marked viewed (secure endpoint, requires auth)
+   * @param alertId
+   * @returns
+   */
   async markAlertViewed(alertId: string): Promise<any> {
     const utcDate = new Date(Date.now());
 
@@ -254,6 +282,11 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-8 - Alerts can be marked ignored (secure endpoint, requires auth)
+   * @param alertId
+   * @returns
+   */
   async markAlertIgnored(alertId: string): Promise<any> {
     const utcDate = new Date(Date.now());
 
@@ -265,6 +298,11 @@ export class AdminService {
     }
   }
 
+  /**
+   * BE-ADM-5 - Aggregate sensor readings for a device by date range (secure endpoint, requires auth)
+   * @param param
+   * @param query
+   */
   async aggregateSensorReading(param: any, query: any): Promise<any> {
     const serialNumber = param.serialNumber;
     const dateFrom = query.from;
@@ -285,12 +323,18 @@ export class AdminService {
         .where({ deviceId: device.id })
         .whereBetween('serverReadingDate', [dateFrom, dateTo])
         .groupBy('temperature');
+      console.log(res);
     } catch (error) {
       logger.info(JSON.stringify(error));
       throw error;
     }
   }
 
+  /**
+   * BE-ADM-11 - Filter devices by registration date (secure endpoint, requires auth)
+   * @param query
+   * @returns
+   */
   async filterDevicesByDate(query: any): Promise<any> {
     const dateFrom = query.from;
     const dateTo = query.to;
