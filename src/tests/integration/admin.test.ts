@@ -40,6 +40,18 @@ describe('Admin', () => {
     done();
   });
 
+  it('BE-ADM-5 - Aggregate sensor readings for a device by date range', async (done) => {
+    const device = await Device.query().where({ id: 1 }).first();
+    const res = await request(app)
+      .get(`/api/admin/get-sensor-readings/${device.serialNumber}`)
+      .query({ from: '2022-03-10', to: '2022-03-13' })
+      .set('Authorization', `Bearer ${authToken}`);
+
+    expect(device).toBeDefined();
+    expect(res.status).toBe(200);
+    done();
+  });
+
   it('BE-ADM-6: List alerts active in the system', async (done) => {
     const res = await request(app).get(`/api/admin/list-active-alerts`).set('Authorization', `Bearer ${authToken}`);
     expect(res.status).toBe(200);

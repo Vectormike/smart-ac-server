@@ -16,6 +16,7 @@ export interface IAdminController {
   markAlertIgnored: RequestHandler;
   filteredDevices: RequestHandler;
   aggregateSensorReading: RequestHandler;
+  getAlertWithReadings: RequestHandler;
 }
 
 export function AdminControllerFactory(adminService: AdminService): IAdminController {
@@ -223,7 +224,7 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
       const { params, query } = req;
 
       try {
-        const devices = await adminService.aggregateSensorReading(params, query);
+        const devices = await adminService.aggregateSensorReading(params.serialNumber, query);
         return res.send({
           message: 'Aggregation successfully',
           status: httpStatus.OK,
@@ -242,7 +243,7 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param res
      * @returns
      */
-    async filteredDevices(req: Request, res: Response): Promise<IHelperResponse | any> {
+    async filteredDevices(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { query } = req;
 
       try {
@@ -255,6 +256,30 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
         });
       } catch (error) {
         logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    /**
+     * BE-ADM-11 - Filter devices by registration date (secure endpoint, requires auth)
+     * @param req
+     * @param res
+     * @returns
+     */
+    async getAlertWithReadings(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
+      const { params } = req;
+
+      try {
+        const devices = await adminService.getAlertWithReadings(params.deviceReportId);
+        return res.send({
+          success: true,
+          status: httpStatus.OK,
+          message: 'Device filtered successfully',
+          data: devices,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
       }
     },
   };

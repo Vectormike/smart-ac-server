@@ -3023,3 +3023,212 @@ info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20
 
 info: Request🏷️: Mar-13-2022 21:20:58: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:58 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
 
+info: Request🏷️: Mar-13-2022 22:22:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:23:29: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:23:45: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:23:48: ::1 - - [13/Mar/2022:21:23:48 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:24:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:24:38: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:24:41: ::1 - - [13/Mar/2022:21:24:41 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:24:42: ::1 - - [13/Mar/2022:21:24:42 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 404 40 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:24:57: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:24:58: request>>{}
+info: Request🏷️: Mar-13-2022 22:24:58: ::1 - - [13/Mar/2022:21:24:58 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 401 143 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:25:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:25:15: {}
+info: Request🏷️: Mar-13-2022 22:25:15: {}
+info: Request🏷️: Mar-13-2022 22:25:15: request>>{}
+info: Request🏷️: Mar-13-2022 22:25:15: ::1 - - [13/Mar/2022:21:25:15 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 156 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:27:19: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:27:23: {}
+info: Request🏷️: Mar-13-2022 22:27:23: {}
+info: Request🏷️: Mar-13-2022 22:27:23: request>>{}
+info: Request🏷️: Mar-13-2022 22:27:23: ::1 - - [13/Mar/2022:21:27:23 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 156 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:27:30: {}
+info: Request🏷️: Mar-13-2022 22:27:30: {}
+info: Request🏷️: Mar-13-2022 22:27:30: request>>{}
+info: Request🏷️: Mar-13-2022 22:27:30: ::1 - - [13/Mar/2022:21:27:30 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 156 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:39:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:39:03: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 22:39:03: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 22:39:03: request>>{}
+info: Request🏷️: Mar-13-2022 22:39:03: ::1 - - [13/Mar/2022:21:39:03 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 520 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:39:20: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:39:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:39:31: {}
+info: Request🏷️: Mar-13-2022 22:39:31: {}
+info: Request🏷️: Mar-13-2022 22:39:31: request>>{}
+info: Request🏷️: Mar-13-2022 22:39:31: ::1 - - [13/Mar/2022:21:39:31 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 174 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 22:42:59: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:43:48: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 22:44:43: [object Object]
+info: Request🏷️: Mar-13-2022 22:44:43: Server taking readings...
+info: Request🏷️: Mar-13-2022 22:44:43: Server readings taken...
+info: Request🏷️: Mar-13-2022 22:44:43: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:43 +0000] "POST /api/device-report/add-device-report HTTP/1.1" 200 79 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "POST /api/admin/login HTTP/1.1" 200 535 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/get-devices HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/list-active-alerts HTTP/1.1" 200 570 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/mark-alert-viewed/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:46: Searching device...
+info: Request🏷️: Mar-13-2022 22:44:46: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:46 +0000] "GET /api/admin/search-device/123456789 HTTP/1.1" 200 234 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:47: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:47 +0000] "POST /api/device/register-device HTTP/1.1" 200 297 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 22:44:48: ::ffff:127.0.0.1 - - [13/Mar/2022:21:44:48 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:37: [object Object]
+info: Request🏷️: Mar-13-2022 23:14:37: Server taking readings...
+info: Request🏷️: Mar-13-2022 23:14:37: Server readings taken...
+info: Request🏷️: Mar-13-2022 23:14:37: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:37 +0000] "POST /api/device-report/add-device-report HTTP/1.1" 200 79 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "POST /api/admin/login HTTP/1.1" 200 535 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/get-devices HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/list-active-alerts HTTP/1.1" 200 570 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/mark-alert-viewed/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:38: Searching device...
+info: Request🏷️: Mar-13-2022 23:14:38: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:38 +0000] "GET /api/admin/search-device/123456789 HTTP/1.1" 200 234 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:39: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:39 +0000] "POST /api/device/register-device HTTP/1.1" 200 297 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:39: ::ffff:127.0.0.1 - - [13/Mar/2022:22:14:39 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 23:14:49: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:14:55: {}
+info: Request🏷️: Mar-13-2022 23:14:55: {}
+info: Request🏷️: Mar-13-2022 23:14:55: request>>{}
+info: Request🏷️: Mar-13-2022 23:14:55: ::1 - - [13/Mar/2022:22:14:55 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:14:57: {}
+info: Request🏷️: Mar-13-2022 23:14:57: {}
+info: Request🏷️: Mar-13-2022 23:14:57: request>>{}
+info: Request🏷️: Mar-13-2022 23:14:57: ::1 - - [13/Mar/2022:22:14:57 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:25:25: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:25:26: {}
+info: Request🏷️: Mar-13-2022 23:25:26: {}
+info: Request🏷️: Mar-13-2022 23:25:26: request>>{}
+info: Request🏷️: Mar-13-2022 23:25:26: ::1 - - [13/Mar/2022:22:25:26 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:25:27: {}
+info: Request🏷️: Mar-13-2022 23:25:27: {}
+info: Request🏷️: Mar-13-2022 23:25:27: request>>{}
+info: Request🏷️: Mar-13-2022 23:25:27: ::1 - - [13/Mar/2022:22:25:27 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:25:47: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:25:47: {}
+info: Request🏷️: Mar-13-2022 23:25:47: {}
+info: Request🏷️: Mar-13-2022 23:25:47: request>>{}
+info: Request🏷️: Mar-13-2022 23:25:47: ::1 - - [13/Mar/2022:22:25:47 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:25:48: {}
+info: Request🏷️: Mar-13-2022 23:25:48: {}
+info: Request🏷️: Mar-13-2022 23:25:48: request>>{}
+info: Request🏷️: Mar-13-2022 23:25:48: ::1 - - [13/Mar/2022:22:25:48 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:26:02: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:26:04: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'alert.viewState' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:26:04: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'alert.viewState' in 'field list'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:26:04: request>>{}
+info: Request🏷️: Mar-13-2022 23:26:04: ::1 - - [13/Mar/2022:22:26:04 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 427 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:26:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:26:15: ::1 - - [13/Mar/2022:22:26:15 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 200 301 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:26:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:26:42: {}
+info: Request🏷️: Mar-13-2022 23:26:42: {}
+info: Request🏷️: Mar-13-2022 23:26:42: request>>{}
+info: Request🏷️: Mar-13-2022 23:26:42: ::1 - - [13/Mar/2022:22:26:42 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:26:43: {}
+info: Request🏷️: Mar-13-2022 23:26:43: {}
+info: Request🏷️: Mar-13-2022 23:26:43: request>>{}
+info: Request🏷️: Mar-13-2022 23:26:43: ::1 - - [13/Mar/2022:22:26:43 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:26:57: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:26:59: ::1 - - [13/Mar/2022:22:26:59 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 200 301 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:29:08: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:29:08: {}
+info: Request🏷️: Mar-13-2022 23:29:08: {}
+info: Request🏷️: Mar-13-2022 23:29:08: request>>{}
+info: Request🏷️: Mar-13-2022 23:29:08: ::1 - - [13/Mar/2022:22:29:08 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 970 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:29:22: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:31:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:31:47: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'alert.id' in 'on clause'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:31:47: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'alert.id' in 'on clause'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:31:47: request>>{}
+info: Request🏷️: Mar-13-2022 23:31:47: ::1 - - [13/Mar/2022:22:31:47 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 346 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:32:00: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:32:00: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'deviceReport.id' in 'on clause'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:32:00: {"name":"DBError","nativeError":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'deviceReport.id' in 'on clause'"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 23:32:00: request>>{}
+info: Request🏷️: Mar-13-2022 23:32:00: ::1 - - [13/Mar/2022:22:32:00 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 361 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:32:11: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:32:12: ::1 - - [13/Mar/2022:22:32:12 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 200 1015 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:32:43: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:32:45: {}
+info: Request🏷️: Mar-13-2022 23:32:45: {}
+info: Request🏷️: Mar-13-2022 23:32:45: request>>{}
+info: Request🏷️: Mar-13-2022 23:32:45: ::1 - - [13/Mar/2022:22:32:45 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:32:46: {}
+info: Request🏷️: Mar-13-2022 23:32:46: {}
+info: Request🏷️: Mar-13-2022 23:32:46: request>>{}
+info: Request🏷️: Mar-13-2022 23:32:46: ::1 - - [13/Mar/2022:22:32:46 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:35:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:36:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:38:31: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:43:09: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:43:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:43:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:43:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:43:48: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:44:11: {}
+info: Request🏷️: Mar-13-2022 23:44:11: {}
+info: Request🏷️: Mar-13-2022 23:44:11: request>>{}
+info: Request🏷️: Mar-13-2022 23:44:11: ::1 - - [13/Mar/2022:22:44:11 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 500 170 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:44:51: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 23:44:53: ::1 - - [13/Mar/2022:22:44:53 +0000] "GET /api/admin/get-alert-readings/1 HTTP/1.1" 200 1015 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 23:45:03: Server server started at http://localhost:5000

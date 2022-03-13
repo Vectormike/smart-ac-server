@@ -9,7 +9,6 @@ export class AlertService {
   private async checkDuplicateAlert(data: CreateAlertInput, newDate: Date): Promise<any> {
     try {
       const duplicateAlert = await this.alertModel.query().where({ alert: data.alert, serialNumber: data.serialNumber, resolved: 'new' });
-      console.log(duplicateAlert.length);
 
       if (duplicateAlert.length) {
         return await this.alertModel.query().patch({ alertDate: newDate }).where({ alert: data.alert, serialNumber: data.serialNumber, resolved: 'new' });

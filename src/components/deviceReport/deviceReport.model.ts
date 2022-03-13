@@ -18,19 +18,6 @@ export class DeviceReport extends Model {
     json = super.$formatJson(json);
     return json;
   }
-
-  //   static get relationMappings() {
-  //     return {
-  //       account: {
-  //         relation: Model.HasOneRelation,
-  //         modelClass: Device,
-  //         join: {
-  //           from: 'account.accountNumber',
-  //           to: 'users.id',
-  //         },
-  //       },
-  //     };
-  //   }
 }
 
 export type DeviceShape = ModelObject<DeviceReport>;

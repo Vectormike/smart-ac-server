@@ -303,8 +303,8 @@ export class AdminService {
    * @param param
    * @param query
    */
-  async aggregateSensorReading(param: any, query: any): Promise<any> {
-    const serialNumber = param.serialNumber;
+  async aggregateSensorReading(param: string, query: any): Promise<any> {
+    const serialNumber = param;
     const dateFrom = query.from;
     const dateTo = query.to;
 
@@ -327,7 +327,6 @@ export class AdminService {
         .sum('humidity as totalHumidity')
         .groupBy('serverReadingDate');
 
-      console.log(res);
       return res;
     } catch (error) {
       logger.info(JSON.stringify(error));
@@ -347,6 +346,20 @@ export class AdminService {
     try {
       logger.info('Filtering dates readings...');
       return await this.deviceModel.query().whereBetween('registrationDate', [dateFrom, dateTo]).orderBy('id', 'desc');
+    } catch (error) {
+      logger.info(JSON.stringify(error));
+      throw error;
+    }
+  }
+
+  /**
+   * BE-ADM-9 - Alert data can be listed along with sensor readings (internal logic)
+   */
+  async getAlertWithReadings(deviceReportId: string): Promise<any> {
+    try {
+      const response = await this.alertModel.query().join('deviceReports', 'alerts.id', '=', 'deviceReports.id');
+
+      return response;
     } catch (error) {
       logger.info(JSON.stringify(error));
       throw error;
