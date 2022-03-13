@@ -20,18 +20,18 @@ export interface IAdminController {
 
 export function AdminControllerFactory(adminService: AdminService): IAdminController {
   return {
-    async register(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async register(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { body } = req;
 
       try {
         const user = await adminService.register(body);
 
-        return {
+        return res.send({
           success: true,
           status: httpStatus.CREATED,
           message: 'User account was created successfully.',
           data: user,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -45,34 +45,34 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param next
      * @returns
      */
-    async login(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async login(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { body } = req;
 
       try {
         const loginData = await adminService.login(body);
-        return {
+        return res.send({
           message: 'Logged in successfully',
           success: true,
           status: httpStatus.OK,
           data: loginData,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
       }
     },
 
-    async logout(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async logout(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       try {
         const { refreshToken } = req.body;
 
         await adminService.logout(refreshToken);
 
-        return {
+        return res.send({
           message: 'Successfully logged out',
           status: httpStatus.OK,
           success: true,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -86,17 +86,17 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param next
      * @returns
      */
-    async getDevices(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async getDevices(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { query } = req;
 
       try {
         const devices = await adminService.getDevices(query);
-        return {
+        return res.send({
           message: 'Devices fetched successfully',
           status: httpStatus.OK,
           success: true,
           data: devices,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -110,17 +110,17 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param next
      * @returns
      */
-    async getSensorReadings(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async getSensorReadings(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { params, query } = req;
 
       try {
         const devices = await adminService.getSensorReadings(params, query);
-        return {
+        return res.send({
           message: 'Sensor readings fetched successfully',
           status: httpStatus.OK,
           success: true,
           data: devices,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -131,15 +131,15 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * BE-ADM-6 - List alerts active in the system (secure endpoint, requires auth)
      * @returns
      */
-    async listActiveAlerts(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async listActiveAlerts(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       try {
         const device = await adminService.listActiveAlerts();
-        return {
+        return res.send({
           message: 'Device fetched successfully',
           status: httpStatus.OK,
           success: true,
           data: device,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -153,17 +153,17 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param next
      * @returns
      */
-    async searchDevice(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async searchDevice(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { params } = req;
 
       try {
         const device = await adminService.searchDevice(params);
-        return {
+        return res.send({
           message: 'Device fetched successfully',
           status: httpStatus.OK,
           success: true,
           data: device,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -176,16 +176,16 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param res
      * @returns
      */
-    async markAlertViewed(req: Request, res: Response): Promise<IHelperResponse> {
+    async markAlertViewed(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { params } = req;
 
       try {
         await adminService.markAlertViewed(params.alertId);
-        return {
+        return res.send({
           success: true,
           status: httpStatus.OK,
           message: 'Device alert resolved',
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }
@@ -197,16 +197,16 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param res
      * @returns
      */
-    async markAlertIgnored(req: Request, res: Response): Promise<IHelperResponse> {
+    async markAlertIgnored(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { params } = req;
 
       try {
         await adminService.markAlertIgnored(params.alertId);
-        return {
+        return res.send({
           success: true,
           status: httpStatus.OK,
           message: 'Device alert resolved',
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }
@@ -219,17 +219,17 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param next
      * @returns
      */
-    async aggregateSensorReading(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse> {
+    async aggregateSensorReading(req: Request, res: Response, next: NextFunction): Promise<IHelperResponse | any> {
       const { params, query } = req;
 
       try {
         const devices = await adminService.aggregateSensorReading(params, query);
-        return {
-          message: 'Sensor readings fetched successfully',
+        return res.send({
+          message: 'Aggregation successfully',
           status: httpStatus.OK,
           success: true,
           data: devices,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
@@ -242,17 +242,17 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
      * @param res
      * @returns
      */
-    async filteredDevices(req: Request, res: Response): Promise<IHelperResponse> {
+    async filteredDevices(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { query } = req;
 
       try {
         const devices = await adminService.filterDevicesByDate(query);
-        return {
+        return res.send({
           success: true,
           status: httpStatus.OK,
           message: 'Device filtered successfully',
           data: devices,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }

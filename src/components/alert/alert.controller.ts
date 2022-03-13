@@ -16,16 +16,16 @@ export function AlertControllerFactory(alertService: AlertService): IAlertContro
      * @param res
      * @returns
      */
-    async resolveAlert(req: Request, res: Response): Promise<IHelperResponse> {
+    async resolveAlert(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { params } = req;
 
       try {
         await alertService.resolveAlert(params.alertId);
-        return {
+        return res.send({
           success: true,
           status: httpStatus.OK,
           message: 'Device alert resolved',
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }

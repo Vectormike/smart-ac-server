@@ -16,7 +16,7 @@ export function DeviceReportControllerFactory(deviceReportService: DeviceReportS
      * @param res
      * @returns
      */
-    async addDeviceReport(req: Request, res: Response): Promise<IHelperResponse> {
+    async addDeviceReport(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { body } = req;
       logger.info(body);
 
@@ -29,11 +29,11 @@ export function DeviceReportControllerFactory(deviceReportService: DeviceReportS
             message: 'Device report not registered',
           };
         }
-        return {
+        return res.send({
           success: true,
-          status: httpStatus.INTERNAL_SERVER_ERROR,
+          status: httpStatus.CREATED,
           message: 'Device report registered successfully',
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }

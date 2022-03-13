@@ -2836,3 +2836,190 @@ info: Request🏷️: Mar-13-2022 19:50:02: Server server started at http://loca
 info: Request🏷️: Mar-13-2022 19:51:41: Server server started at http://localhost:5000
 info: Request🏷️: Mar-13-2022 19:53:49: Server server started at http://localhost:5000
 info: Request🏷️: Mar-13-2022 19:55:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:41:57: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:42:23: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:42:24: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:42:24: Aggregating...
+info: Request🏷️: Mar-13-2022 20:42:49: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:42:50: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:42:51: Aggregating...
+info: Request🏷️: Mar-13-2022 20:44:55: ::1 - - [13/Mar/2022:19:44:55 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-13 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 20:46:06: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:46:06: Aggregating...
+info: Request🏷️: Mar-13-2022 20:47:37: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:47:38: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:47:38: Aggregating...
+info: Request🏷️: Mar-13-2022 20:48:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:48:27: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:48:27: Aggregating...
+info: Request🏷️: Mar-13-2022 20:48:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:48:42: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:48:42: Aggregating...
+info: Request🏷️: Mar-13-2022 20:50:25: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:51:00: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:51:02: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:51:02: Aggregating...
+info: Request🏷️: Mar-13-2022 20:51:02: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:51:02: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:51:02: request>>{}
+info: Request🏷️: Mar-13-2022 20:51:02: ::1 - - [13/Mar/2022:19:51:02 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-15 HTTP/1.1" 500 913 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 20:53:40: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:53:40: Aggregating...
+info: Request🏷️: Mar-13-2022 20:53:40: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:40: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:40: request>>{}
+info: Request🏷️: Mar-13-2022 20:53:40: ::1 - - [13/Mar/2022:19:53:40 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-15 HTTP/1.1" 500 913 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 20:53:41: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:53:41: Aggregating...
+info: Request🏷️: Mar-13-2022 20:53:41: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:41: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:41: request>>{}
+info: Request🏷️: Mar-13-2022 20:53:41: ::1 - - [13/Mar/2022:19:53:41 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-15 HTTP/1.1" 500 913 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 20:53:53: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:53:53: Aggregating...
+info: Request🏷️: Mar-13-2022 20:53:53: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:53: {"name":"DBError","nativeError":{"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'theorem.deviceReports.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 20:53:53: request>>{}
+info: Request🏷️: Mar-13-2022 20:53:53: ::1 - - [13/Mar/2022:19:53:53 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-15 HTTP/1.1" 500 913 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 20:54:10: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 20:54:10: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 20:54:10: Aggregating...
+info: Request🏷️: Mar-13-2022 21:00:32: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:00:33: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:00:33: Aggregating...
+info: Request🏷️: Mar-13-2022 21:00:33: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as `totalHumidity, carbonMonoxide as totalCarbonMonoxide` from `deviceReports` w' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 21:00:33: {"name":"DBError","nativeError":{"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as `totalHumidity, carbonMonoxide as totalCarbonMonoxide` from `deviceReports` w' at line 1"},"client":"mysql"}
+info: Request🏷️: Mar-13-2022 21:00:33: request>>{}
+info: Request🏷️: Mar-13-2022 21:00:33: ::1 - - [13/Mar/2022:20:00:33 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" 500 932 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:01:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:02:01: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:02:03: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:02:04: Aggregating...
+info: Request🏷️: Mar-13-2022 21:02:51: ::1 - - [13/Mar/2022:20:02:51 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:03:46: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:03:48: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:03:48: Aggregating...
+info: Request🏷️: Mar-13-2022 21:04:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:04:27: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:04:27: Aggregating...
+info: Request🏷️: Mar-13-2022 21:05:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:05:26: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:05:26: Aggregating...
+info: Request🏷️: Mar-13-2022 21:05:33: ::1 - - [13/Mar/2022:20:05:33 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:06:20: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:06:20: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:06:21: Aggregating...
+info: Request🏷️: Mar-13-2022 21:06:49: ::1 - - [13/Mar/2022:20:06:49 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:07:11: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:07:36: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:07:46: ::1 - - [13/Mar/2022:20:07:46 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:07:52: ::1 - - [13/Mar/2022:20:07:52 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:08:04: ::1 - - [13/Mar/2022:20:08:04 +0000] "GET /api/admin/mark-alert-ignored/1/ HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:08:22: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:08:42: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:08:50: ::1 - - [13/Mar/2022:20:08:50 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:09:08: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:09:10: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:09:10: Aggregating...
+info: Request🏷️: Mar-13-2022 21:09:12: ::1 - - [13/Mar/2022:20:09:12 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:09:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:09:33: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:09:33: Aggregating...
+info: Request🏷️: Mar-13-2022 21:09:33: ::1 - - [13/Mar/2022:20:09:33 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" 200 669 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:10:22: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:10:31: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:10:31: Aggregating...
+info: Request🏷️: Mar-13-2022 21:10:31: ::1 - - [13/Mar/2022:20:10:31 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" 200 669 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:12:48: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:12:48: Aggregating...
+info: Request🏷️: Mar-13-2022 21:12:48: ::1 - - [13/Mar/2022:20:12:48 +0000] "GET /api/admin/aggregate-sensor-readings/123456789/?from=2022-03-10&to=2022-03-12 HTTP/1.1" 200 669 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:12:53: Filtering dates readings...
+info: Request🏷️: Mar-13-2022 21:12:55: ::1 - - [13/Mar/2022:20:12:55 +0000] "GET /api/admin/filter-devices/?to=2020-02-02&from=2020-02-02 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:13:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:13:20: ::1 - - [13/Mar/2022:20:13:20 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" - - "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:13:34: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:13:35: ::1 - - [13/Mar/2022:20:13:35 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" 200 63 "-" "PostmanRuntime/7.29.0"
+
+info: Request🏷️: Mar-13-2022 21:14:14: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:14:30: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:14:54: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:15:26: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:15:32: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:15:52: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:16:13: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:16:28: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:16:56: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:17:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:17:37: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:17:58: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:18:07: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:18:15: Server server started at http://localhost:5000
+info: Request🏷️: Mar-13-2022 21:18:36: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:36 +0000] "POST /api/admin/login HTTP/1.1" 200 535 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:36: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:36 +0000] "GET /api/admin/get-devices HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:18:37: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:37 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:37 +0000] "GET /api/admin/list-active-alerts HTTP/1.1" 200 570 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:37 +0000] "GET /api/admin/mark-alert-viewed/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:37 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: Searching device...
+info: Request🏷️: Mar-13-2022 21:18:37: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:37 +0000] "GET /api/admin/search-device/123456789 HTTP/1.1" 200 234 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:37: [object Object]
+info: Request🏷️: Mar-13-2022 21:18:37: Server taking readings...
+info: Request🏷️: Mar-13-2022 21:18:38: Server readings taken...
+info: Request🏷️: Mar-13-2022 21:18:38: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:38 +0000] "POST /api/device-report/add-device-report HTTP/1.1" 200 79 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:38: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:38 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:18:39: ::ffff:127.0.0.1 - - [13/Mar/2022:20:18:39 +0000] "POST /api/device/register-device HTTP/1.1" 200 297 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:54: [object Object]
+info: Request🏷️: Mar-13-2022 21:20:54: Server taking readings...
+info: Request🏷️: Mar-13-2022 21:20:54: Server readings taken...
+info: Request🏷️: Mar-13-2022 21:20:54: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:54 +0000] "POST /api/device-report/add-device-report HTTP/1.1" 200 79 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:55: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:55 +0000] "POST /api/device/register-device HTTP/1.1" 200 297 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:56: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:56 +0000] "POST /api/admin/login HTTP/1.1" 200 535 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:56: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:56 +0000] "GET /api/admin/get-devices HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:57: Getting sensor readings...
+info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:57 +0000] "GET /api/admin/get-sensor-readings/123456789?from=2022-03-10&to=2022-03-13 HTTP/1.1" 200 - "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:57 +0000] "GET /api/admin/list-active-alerts HTTP/1.1" 200 570 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:57 +0000] "GET /api/admin/mark-alert-viewed/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:57 +0000] "GET /api/admin/mark-alert-ignored/1 HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:57: Searching device...
+info: Request🏷️: Mar-13-2022 21:20:57: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:57 +0000] "GET /api/admin/search-device/123456789 HTTP/1.1" 200 234 "-" "node-superagent/3.8.3"
+
+info: Request🏷️: Mar-13-2022 21:20:58: ::ffff:127.0.0.1 - - [13/Mar/2022:20:20:58 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 63 "-" "node-superagent/3.8.3"
+

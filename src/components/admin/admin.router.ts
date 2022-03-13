@@ -25,7 +25,7 @@ export function AdminRouter(options: ComponentRouterOptions<IAdminController, Ad
   router.get('/mark-alert-viewed/:alertId', guards.AuthGuard({ strict: true }), controller.markAlertViewed);
 
   router.get('/mark-alert-ignored/:alertId', guards.AuthGuard({ strict: true }), controller.markAlertIgnored);
-  //WIP
+
   router.get('/aggregate-sensor-readings/:serialNumber', guards.AuthGuard({ strict: true }), controller.aggregateSensorReading);
 
   router.get('/filter-devices', guards.AuthGuard({ strict: true }), controller.filteredDevices);

@@ -319,11 +319,16 @@ export class AdminService {
 
       const res = await this.deviceReportModel
         .query()
-        .select('temperature')
+        .select('temperature', 'humidity', 'carbonMonoxide', 'serverReadingDate')
         .where({ deviceId: device.id })
         .whereBetween('serverReadingDate', [dateFrom, dateTo])
-        .groupBy('temperature');
+        .sum('temperature as totalTemperature')
+        .sum('carbonMonoxide as totalCarbonMonoxide')
+        .sum('humidity as totalHumidity')
+        .groupBy('serverReadingDate');
+
       console.log(res);
+      return res;
     } catch (error) {
       logger.info(JSON.stringify(error));
       throw error;

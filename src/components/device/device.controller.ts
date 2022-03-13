@@ -16,17 +16,17 @@ export function DeviceControllerFactory(deviceService: DeviceService): IDeviceCo
      * @param res
      * @returns
      */
-    async registerDevice(req: Request, res: Response): Promise<IHelperResponse> {
+    async registerDevice(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { body } = req;
 
       try {
         const device = await deviceService.registerDevice(body);
-        return {
+        return res.send({
           success: true,
           status: httpStatus.CREATED,
           message: 'Device registered successfully',
           data: device,
-        };
+        });
       } catch (error) {
         logger.info(JSON.stringify(error));
       }

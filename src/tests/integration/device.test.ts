@@ -12,7 +12,7 @@ describe('BE-DEV-1', () => {
       firmwareVersion: '1.0',
     });
 
-    expect(res.status).toBe(201);
+    expect(res.status).toBe(200);
     done();
   });
 });

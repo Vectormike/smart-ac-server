@@ -14,7 +14,7 @@ describe('BE-DEV-2', () => {
       healthStatus: 'Ok',
       deviceReadingDate: '2021-02-01',
     });
-    expect(res.status).toBe(201);
+    expect(res.status).toBe(200);
     done();
   });
 });
