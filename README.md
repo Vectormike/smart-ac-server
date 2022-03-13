@@ -1,6 +1,6 @@
 # SmartAC API
 
-This application allows you to create an account while being able to deposit, transfer and withdraw from it.
+TheoremOne Practical Exercise - Proof of Concept for SmartAC
 
 ## Manual Installation
 
@@ -9,7 +9,7 @@ If you would still prefer to do the installation manually, follow these steps:
 Clone the repo:
 
 ```bash
-git clone --depth 1 https://github.com/Vectormike/smartAC
+git clone be-9e6990f8-5da2-45df-9548-61828e9be2ca-smartac smartAC
 cd smartAC
 
 ```
