@@ -6,7 +6,7 @@ WORKDIR '/app'
 COPY package*.json ./
 RUN npm i -g knex
 
-RUN npm install
+RUN npm install --save
 
 USER root
 

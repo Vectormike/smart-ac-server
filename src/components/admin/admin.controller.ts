@@ -1,7 +1,6 @@
-import { Request, Response, NextFunction, RequestHandler, query } from 'express';
+import { Request, Response, NextFunction, RequestHandler } from 'express';
 import httpStatus from 'http-status';
 import logger from '../../logger';
-import { AlertService } from '../../components/alert/alert.service';
 import { AdminService } from './admin.service';
 import { IHelperResponse } from '../../shared/types/Response';
 
