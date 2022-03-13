@@ -1,7 +1,7 @@
-import { Request, Response, NextFunction, RequestHandler } from 'express';
+import { Request, Response, NextFunction, RequestHandler, query } from 'express';
 import httpStatus from 'http-status';
 import logger from '../../logger';
-import { CurrentUserType } from '../../shared/types/CurrentUser';
+import { AlertService } from '../../components/alert/alert.service';
 import { AdminService } from './admin.service';
 
 export interface IAdminController {
@@ -9,13 +9,17 @@ export interface IAdminController {
   login: RequestHandler;
   logout: RequestHandler;
   getDevices: RequestHandler;
+  getSensorReadings: RequestHandler;
+  searchDevice: RequestHandler;
+  listActiveAlerts: RequestHandler;
+  markAlertViewed: RequestHandler;
+  markAlertIgnored: RequestHandler;
+  filteredDevices: RequestHandler;
+  aggregateSensorReading: RequestHandler;
 }
 
 export function AdminControllerFactory(adminService: AdminService): IAdminController {
   return {
-    /**
-     * Signs up a new user
-     */
     async register(req: Request, res: Response, next: NextFunction): Promise<any> {
       const { body } = req;
 
@@ -73,8 +77,10 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
     },
 
     async getDevices(req: Request, res: Response, next: NextFunction): Promise<any> {
+      const { query } = req;
+
       try {
-        const devices = await adminService.getDevices();
+        const devices = await adminService.getDevices(query);
         return res.status(httpStatus.OK).send({
           message: 'Devices fetched successfully',
           statusCode: httpStatus.OK,
@@ -84,6 +90,118 @@ export function AdminControllerFactory(adminService: AdminService): IAdminContro
       } catch (error) {
         logger.info(JSON.stringify(error));
         next(error);
+      }
+    },
+
+    async getSensorReadings(req: Request, res: Response, next: NextFunction): Promise<any> {
+      const { params, query } = req;
+
+      try {
+        const devices = await adminService.getSensorReadings(params, query);
+        return res.status(httpStatus.OK).send({
+          message: 'Sensor readings fetched successfully',
+          statusCode: httpStatus.OK,
+          status: 'success',
+          data: devices,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    async listActiveAlerts(req: Request, res: Response, next: NextFunction): Promise<any> {
+      try {
+        const device = await adminService.listActiveAlerts();
+        return res.status(httpStatus.OK).send({
+          message: 'Device fetched successfully',
+          statusCode: httpStatus.OK,
+          status: 'success',
+          data: device,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    async searchDevice(req: Request, res: Response, next: NextFunction): Promise<any> {
+      const { params } = req;
+
+      try {
+        const device = await adminService.searchDevice(params);
+        return res.status(httpStatus.OK).send({
+          message: 'Device fetched successfully',
+          statusCode: httpStatus.OK,
+          status: 'success',
+          data: device,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    async markAlertViewed(req: Request, res: Response): Promise<any> {
+      const { params } = req;
+
+      try {
+        await adminService.markAlertViewed(params.alertId);
+        return res.status(httpStatus.OK).json({
+          success: 'success',
+          statusCode: httpStatus.OK,
+          message: 'Device alert resolved',
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+      }
+    },
+
+    async markAlertIgnored(req: Request, res: Response): Promise<any> {
+      const { params } = req;
+
+      try {
+        await adminService.markAlertIgnored(params.alertId);
+        return res.status(httpStatus.OK).json({
+          success: 'success',
+          statusCode: httpStatus.OK,
+          message: 'Device alert resolved',
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+      }
+    },
+
+    async aggregateSensorReading(req: Request, res: Response, next: NextFunction): Promise<any> {
+      const { params, query } = req;
+
+      try {
+        const devices = await adminService.aggregateSensorReading(params, query);
+        return res.status(httpStatus.OK).send({
+          message: 'Sensor readings fetched successfully',
+          statusCode: httpStatus.OK,
+          status: 'success',
+          data: devices,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
+        next(error);
+      }
+    },
+
+    async filteredDevices(req: Request, res: Response): Promise<any> {
+      const { query } = req;
+
+      try {
+        const devices = await adminService.filterDevicesByDate(query);
+        return res.status(httpStatus.OK).json({
+          success: 'success',
+          statusCode: httpStatus.OK,
+          message: 'Device filtered successfully',
+          data: devices,
+        });
+      } catch (error) {
+        logger.info(JSON.stringify(error));
       }
     },
   };

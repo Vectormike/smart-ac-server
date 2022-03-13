@@ -2,7 +2,6 @@ import { Request, Response, NextFunction, RequestHandler } from 'express';
 import httpStatus from 'http-status';
 import logger from '../../logger';
 import { DeviceService } from './device.service';
-import { ResponseType } from '../../shared/types/Response';
 
 export interface IDeviceController {
   registerDevice: RequestHandler;

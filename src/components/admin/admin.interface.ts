@@ -12,3 +12,8 @@ export interface LoginInput {
   password: string;
   rememberMe?: boolean;
 }
+
+export interface DateRange {
+  from: string;
+  to: string;
+}

@@ -20,4 +20,11 @@ export class AdminValidator {
       refreshToken: Joi.string().required().trim().error(new Error('Refresh token is required')),
     };
   });
+
+  GetSensorReadingsDto = createValidator((Joi) => {
+    return {
+      from: Joi.string().required().trim().error(new Error('Start date is required')),
+      to: Joi.string().required().trim().error(new Error('End date is required')),
+    };
+  });
 }

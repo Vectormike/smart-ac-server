@@ -28,7 +28,7 @@ export default function AuthGuard(options?: AuthGuardOptions): RequestHandler {
 
     try {
       if (!token) {
-        throw new UnauthorizedError('Device not recognized');
+        throw new UnauthorizedError('Unauthorized');
       }
 
       const decodedUserInfo = jwt.verify(token, JWT_AUTH_SECRET);

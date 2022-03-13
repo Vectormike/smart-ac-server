@@ -36,6 +36,12 @@ Run the migration:
 knex migrate:latest
 ```
 
+Run the seed:
+
+```
+knex seed:run --specific=admins.ts
+```
+
 Start the server in development"
 
 ```
@@ -58,6 +64,12 @@ Run Migration
 
 ```
 docker exec -t -i app knex migrate:latest
+```
+
+Run Seed
+
+```
+docker exec -t -i app knex seed:run --specific=admins.ts
 ```
 
 ## API Documentation
@@ -84,20 +96,31 @@ To view the list of available APIs and their specifications, vist [Postman API d
 The environment variables can be found and modified in the `.env` file. They come with these default values:
 
 ```bash
-# Port number
 NODE_ENV=development
-PORT=8000
+PORT=5000
 
 BASE_URL_DEV=http://localhost:8000
 BCRYPT_SALT=12
 REFRESH_TOKEN_SECRET=hththjjkekdkkkdkd
+DEVICE_SHARED_SECRET=theorem
 JWT_AUTH_SECRET=kdkdkkdkk
+ADMIN_PASSWORD=tehpassword$$$
 
-DB_NAME=smartac
+DB_NAME=theorem
 DB_HOST=127.0.0.1
 DB_PORT=8889
 DB_USERNAME=root
 DB_PASSWORD=root
+
+TEST_DB_NAME=theorem_test
+TEST_DB_HOST=127.0.0.1
+TEST_DB_PORT=8889
+TEST_DB_USERNAME=root
+TEST_DB_PASSWORD=root
+
+
+DB_LOCAL_PORT=8889
+DB_DOCKER_PORT=8889
 ```
 
 ## Project Structure

@@ -13,8 +13,8 @@ router.get('/', (req, res) => {
 });
 
 router.use('/api/admin', adminRouter);
-router.use('/api', deviceRouter);
-router.use('/api', deviceReportRouter);
-router.use('/api', alertRouter);
+router.use('/api/device', deviceRouter);
+router.use('/api/device-report', deviceReportRouter);
+router.use('/api/alert', alertRouter);
 
 export default router;
