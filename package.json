@@ -30,7 +30,6 @@
   "scripts": {
     "dev": "npm run watch-ts",
     "build": "tsc -p src",
-    "postinstall": "tsc -p src",
     "quick-build": "npm run build",
     "serve": "set NODE_ENV=development && node dist/src/server.js",
     "start-dev": "set NODE_ENV=development && nodemon dist/server.js",

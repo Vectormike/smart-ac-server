@@ -6,14 +6,13 @@ WORKDIR '/app'
 COPY package*.json ./
 RUN npm i -g knex
 
-RUN npm i
-
+RUN npm install
 
 USER root
 
 COPY --chown=node:node . .
 
-EXPOSE 8000
+EXPOSE 5000
 
 RUN npm run quick-build
 

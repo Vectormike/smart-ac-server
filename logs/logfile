@@ -2745,3 +2745,51 @@ info: Request🏷️: Mar-13-2022 14:03:55: ::ffff:127.0.0.1 - - [13/Mar/2022:13
 
 info: Request🏷️: Mar-13-2022 14:03:55: ::ffff:127.0.0.1 - - [13/Mar/2022:13:03:55 +0000] "GET /api/alert/resolve-alert/:alertId HTTP/1.1" 200 72 "-" "node-superagent/3.8.3"
 
+error: Request🏷️: Mar-13-2022 14:42:41: uncaughtException: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+Error: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/app/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+error: Request🏷️: Mar-13-2022 14:47:40: uncaughtException: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+Error: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/app/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+error: Request🏷️: Mar-13-2022 14:48:46: uncaughtException: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+Error: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/app/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+error: Request🏷️: Mar-13-2022 14:50:15: uncaughtException: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+Error: Error loading shared library /app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: Exec format error
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/app/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
