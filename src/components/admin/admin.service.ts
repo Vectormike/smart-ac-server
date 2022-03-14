@@ -357,9 +357,16 @@ export class AdminService {
    */
   async getAlertWithReadings(deviceReportId: string): Promise<any> {
     try {
-      const response = await this.alertModel.query().join('deviceReports', 'alerts.id', '=', 'deviceReports.id');
+      let results: any = {};
 
-      return response;
+      const alertResponse = await this.alertModel.query().where({ deviceReportId: deviceReportId }).first();
+      console.log(alertResponse);
+
+      const deviceReport = await this.deviceReportModel.query().where({ id: alertResponse.deviceReportId }).first();
+
+      results.alert = alertResponse;
+      results.report = deviceReport;
+      return results;
     } catch (error) {
       logger.info(JSON.stringify(error));
       throw error;

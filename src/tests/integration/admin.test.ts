@@ -75,6 +75,15 @@ describe('Admin', () => {
     done();
   });
 
+  it('BE-ADM-9: Alert data can be listed along with sensor readings.', async (done) => {
+    // const device = await Device.query().where({ id: 1 }).first();
+    const res = await request(app).get(`/api/admin/get-alert-readings/${1}`).set('Authorization', `Bearer ${authToken}`);
+    expect(res.status).toBe(200);
+    expect(res).toBeDefined();
+
+    done();
+  });
+
   it('BE-ADM-10: Search for a device by serial number', async (done) => {
     const device = await Device.query().where({ id: 1 }).first();
     const res = await request(app).get(`/api/admin/search-device/${device.serialNumber}`).set('Authorization', `Bearer ${authToken}`);

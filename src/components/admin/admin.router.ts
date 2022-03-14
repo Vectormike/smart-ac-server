@@ -30,7 +30,7 @@ export function AdminRouter(options: ComponentRouterOptions<IAdminController, Ad
 
   router.get('/filter-devices', guards.AuthGuard({ strict: true }), controller.filteredDevices);
 
-  router.get('/get-alert-readings/:serialNumber', controller.getAlertWithReadings);
+  router.get('/get-alert-readings/:deviceReportId', controller.getAlertWithReadings);
 
   return router;
 }
