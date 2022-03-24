@@ -1,6 +1,7 @@
-export class ResponseType<T = any> {
-  status?: 'success' | 'error';
-  statusCode?: number;
-  message: string;
-  data?: T | T[];
+export interface IHelperResponse {
+  success: boolean;
+  status: number;
+  data?: any;
+  error?: string;
+  message?: string;
 }

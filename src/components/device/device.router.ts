@@ -8,9 +8,6 @@ export function DeviceRouter(options: ComponentRouterOptions<IDeviceController, 
 
   const router = Router();
 
-  /**
-   * @register - register a user
-   */
   router.post('/register-device', validator.CreateDeviceDto.validate, controller.registerDevice);
 
   return router;

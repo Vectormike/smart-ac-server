@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction, RequestHandler } from 'express';
 import httpStatus from 'http-status';
+import { IHelperResponse } from '../../shared/types/Response';
 import logger from '../../logger';
 import { DeviceService } from './device.service';
-import { ResponseType } from '../../shared/types/Response';
 
 export interface IDeviceController {
   registerDevice: RequestHandler;
@@ -10,14 +10,20 @@ export interface IDeviceController {
 
 export function DeviceControllerFactory(deviceService: DeviceService): IDeviceController {
   return {
-    async registerDevice(req: Request, res: Response): Promise<any> {
+    /**
+     * BE-DEV-1 - A device can self-register with the server (open endpoint, no auth)
+     * @param req
+     * @param res
+     * @returns
+     */
+    async registerDevice(req: Request, res: Response): Promise<IHelperResponse | any> {
       const { body } = req;
 
       try {
         const device = await deviceService.registerDevice(body);
-        return res.status(httpStatus.CREATED).json({
-          success: 'success',
-          statusCode: httpStatus.CREATED,
+        return res.send({
+          success: true,
+          status: httpStatus.CREATED,
           message: 'Device registered successfully',
           data: device,
         });

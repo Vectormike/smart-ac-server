@@ -27,7 +27,6 @@ const client = async () => {
     redisClient = client;
     return client;
   } catch (error) {
-    console.log(error, 'hi');
     return console.log('fail to connect to the redis');
   }
 };
