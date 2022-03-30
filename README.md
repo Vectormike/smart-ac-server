@@ -1,6 +1,6 @@
 # SmartAC API
 
-TheoremOne Practical Exercise - Proof of Concept for SmartAC
+Proof of Concept for SmartAC
 
 ## Manual Installation
 
