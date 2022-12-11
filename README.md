@@ -2,6 +2,8 @@
 
 Proof of Concept for SmartAC
 
+SmartAC is a project made for a fictional client with requirements to do some operations regarding some smart Air Conditioners that can communicate with the api
+
 ## Manual Installation
 
 If you would still prefer to do the installation manually, follow these steps:
